@@ -12,8 +12,7 @@ git add Context Daily Projects Intelligence Resources
 $date = Get-Date -Format "yyyy-MM-dd HH:mm"
 git commit -m "auto-commit $date"
 
-# Uncomment de volgende regel als remote-backup is ingesteld:
-# git push origin main --quiet 2>$null
+git push origin main --quiet 2>$null
 
 <#
 INSTELLEN ALS GEPLANDE TAAK (eenmalig uitvoeren in PowerShell als administrator):

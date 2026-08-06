@@ -2,7 +2,7 @@
 
 ## Session Startup
 
-Bij het eerste antwoord van elke sessie lees je stil `Daily/` (nieuwste bestand), `Context/me.md` en `Context/focus.md`. Nooit aankondigen dat je laadt. Lezen, opnemen, antwoorden.
+Bij het eerste antwoord van elke sessie lees je stil `Daily/` (nieuwste bestand), `Context/me.md` en `Context/focus.md`. Als het gesprek over marketing gaat, lees ook `Projects/ZekerWet/marketing/theme-tracker.md` en de laatste 10 regels van `Projects/ZekerWet/marketing/logboek.md`. Nooit aankondigen dat je laadt. Lezen, opnemen, antwoorden.
 
 ## Knowledge Routing
 
@@ -14,6 +14,12 @@ Bij het eerste antwoord van elke sessie lees je stil `Daily/` (nieuwste bestand)
 | ICP, situatie, bezwaren | `Context/icp.md` |
 | Woordelijke klantzinnen (interview) | `Context/pain-points.md` |
 | Toon, merkpersoonlijkheid | `Context/brand.md` |
+| Merkregels, do's en don'ts, zinsritme | `Projects/ZekerWet/marketing/brand-voice.md` |
+| Taglines, value props, CTA's, hashtags | `Projects/ZekerWet/marketing/copy-library.md` |
+| Weekschema en catch-up-regels | `Projects/ZekerWet/marketing/schema.md` |
+| Thema-week en cyclus | `Projects/ZekerWet/marketing/theme-tracker.md` |
+| Contentlogboek (wat gepost, wanneer, resultaat) | `Projects/ZekerWet/marketing/logboek.md` |
+| Dagelijkse contentprompts | `Resources/prompts/marketing-dag.md` |
 | 12-maanden doel | `Context/strategy.md` |
 | Huidige weekprioriteiten | `Context/focus.md` |
 | Dagelijkse log, taken, inbox | `Daily/YYYY-MM-DD.md` |
