@@ -6,28 +6,31 @@ tags: [schema, cadence, ZekerWet]
 project: ZekerWet
 ---
 
-Vast weekschema [[ZekerWet]] marketing. Circa 4 uur per week.
+Vast weekschema [[ZekerWet]] marketing. Circa 3-4 uur per week.
 
-| Dag | Tijd | Wat | Platform |
-|---|---|---|---|
-| Maandag | 30-45 min | 1 educational post | LinkedIn |
-| Dinsdag | 45-60 min | 1 carousel (7 slides) | Instagram + Facebook |
-| Woensdag | 30-45 min | 1 product/feature post + 1 X-thread | LinkedIn + X |
-| Donderdag | 20-30 min | 1 educational post #2 | LinkedIn |
-| Vrijdag | 45-60 min | 1 carousel #2 + 1 enkele tweet | Instagram + Facebook + X |
-| Zaterdag | 0-15 min | Optioneel: quote-card of rust | LinkedIn |
-| Zondag | 30-60 min | Planning week erna + scheduling | Achter de schermen |
+Buffer beheert: LinkedIn, Instagram, Facebook (automatisch ingepland).
+Met de hand: X (tweets kopiëren uit week-content bestand en zelf posten).
+
+| Dag | Tijd | Wat | Platform | Hoe |
+|---|---|---|---|---|
+| Maandag | 30-45 min | 1 educational post | LinkedIn | Buffer auto |
+| Dinsdag | 45-60 min | 1 carousel (7 slides) | Instagram + Facebook | Buffer auto |
+| Woensdag | 30-45 min | 1 product-post + 1 X-thread | LinkedIn + X | Buffer auto (LI) + met de hand (X) |
+| Donderdag | 20-30 min | 1 educational post #2 | LinkedIn | Buffer auto |
+| Vrijdag | 45-60 min | 1 carousel #2 + 1 enkele tweet | Instagram + Facebook + X | Buffer auto (IG/FB) + met de hand (X) |
+| Zaterdag | 0-15 min | Optioneel: quote-card of rust | LinkedIn | Buffer auto of overslaan |
+| Zondag | 30-60 min | Planning week erna + scheduling | Achter de schermen | Script draait automatisch |
 
 ## Optimale posting-tijden (NL, B2B)
 
 - LinkedIn: di/wo/do 08:00-10:00 en 12:00-13:00
-- X: ma-vrij 08:30-09:30 en 17:00-18:00
 - Instagram: ma-zo 11:00-13:00 en 19:00-21:00
 - Facebook: woensdag 14:00-15:00
+- X (met de hand): ma-vrij 08:30-09:30 en 17:00-18:00
 
 ## Crossposting-regels
 
-LinkedIn is niet X. Herschrijf altijd. LinkedIn = uitleg + context. X = hook + geen fluff. Instagram = visueel-first, carousel-format. Facebook = cross-post vanuit Instagram via Meta Business Suite, kortere caption.
+LinkedIn is niet X. Herschrijf altijd. LinkedIn = uitleg + context. X = hook + geen fluff. Instagram = visueel-first, carousel-format. Facebook = automatische cross-post vanuit Instagram via Buffer.
 
 ## Catch-up bij overgeslagen dagen
 
