@@ -16,3 +16,8 @@ Engagement-cijfers vul je een dag later in bij dezelfde regel.
 ---
 
 2026-08-10 (ma, week 1 — Wet DBA) | START — eerste contentdag |
+2026-09-07 (ma, week 4 — Product + social proof) | LinkedIn: educational post | ingepland via Buffer
+2026-09-08 (di, week 4) | Instagram + Facebook: carousel 7 slides | ingepland via Buffer
+2026-09-09 (wo, week 4) | LinkedIn: product-spotlight | ingepland via Buffer | X-thread: handmatig posten
+2026-09-10 (do, week 4) | LinkedIn: educational #2 | ingepland via Buffer
+2026-09-11 (vr, week 4) | Instagram + Facebook: carousel 5 slides | ingepland via Buffer | X-tweet: handmatig posten
