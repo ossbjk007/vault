@@ -41,3 +41,37 @@ De apex antwoordt direct met 400 en `Missing Stripe-Signature header`, dus de ro
 De schrijfweg van `checkout.session.completed` naar de databaserij is in productie nog nooit geslaagd, simpelweg omdat de enige drie echte pogingen door de bezorgfout nooit zijn aangekomen. Bezorging werkt aantoonbaar wel weer, want de events van 25 en 29 augustus zijn met 2xx verwerkt, maar dat waren andere eventtypes. Eén gecontroleerde echte aankoop met daarna een refund is de enige manier om die laatste schakel te bewijzen.
 
 Gerelateerd: [[klant-murmurly]], [[copilot-handover-2026-08-31]], [[2026-08-31]].
+
+## De echte end-to-end test, 2 september 2026
+
+Uitgevoerd met een gewone niet-admin gebruiker (`role: user`, plan werd `Essential` en niet `enterprise`, dus de admin-bypass speelde aantoonbaar niet mee). Kosten: nul euro, want de proefperiode van veertien dagen maakt een factuur van nul en het abonnement is daarna opgezegd per 16 september.
+
+| Schakel | Bewijs |
+|---|---|
+| Checkout | `cs_live_a1nlefcm…` complete en paid, totaal 0 |
+| Subscription | `sub_1UBLbdE2xhFVUSlhMGE9pMsR`, trialing t/m 16-09-2026 |
+| Webhook | `checkout.session.completed` afgeleverd, `pending_webhooks=0` |
+| Idempotency | markering in `ProcessedWebhookEvent`, verwerkt om 21:22:09.457 |
+| Database | customer, subscription, `price_essential` en periode-einde alle vier correct weggeschreven |
+| Entitlement | dashboard, instellingen en account tonen Essential met verlenging 16 september |
+| Product | document `cmtklwo58000004l5p3rmx227` gegenereerd en opgeslagen, 413 tekens |
+| Opzeggen | klantportaal werkt, `customer.subscription.updated` afgeleverd, toegang blijft tot 16 september |
+
+## Tweede bug, gevonden tijdens die test
+
+Het starten van een proefperiode maakt ook een betaalde factuur van nul euro, dus `invoice.payment_succeeded` vuurde 207 milliseconden na `checkout.session.completed`. Die handler zette `stripeTrialEnd` hard op `null` en wiste zo de proefeinddatum die checkout net had geschreven. Gevolg: `isTrial` werd `false` en `createDocument` sloeg de proeflimiet van drie documenten volledig over. Bewijs uit de test: `trialDocCount` bleef op 0 terwijl er wel een document was gemaakt.
+
+Gefixt in `4fc4baa` door Stripe te spiegelen in plaats van te blanken. `handleSubscriptionUpdated` deed dat al goed, de factuur-handler was de uitzondering. Na de opzegging herstelde de databaserij zichzelf via die update-handler: `stripeTrialEnd` staat nu op 16-09-2026.
+
+## Derde bug, gevonden bij code-inspectie
+
+De idempotency-markering werd weggeschreven vóór de handler draaide. Faalde de handler, dan bleef de markering staan, kreeg de herhaalpoging van Stripe een 200 en werd het event nooit verwerkt. Een betaald abonnement kon zo in Stripe staan en nooit in de app landen. Gefixt in `2947e20` door de markering terug te rollen zodra de handler faalt. Die fix is geverifieerd met typecheck en tests, niet met een echte mislukte webhook.
+
+
+## Bewaking, sinds 2 september 2026
+
+`scripts/check-stripe-webhooks.ps1` draait elk kwartier als taak `ZekerWet_WebhookWatch`. Hij leest de Stripe-events, filtert op exact de acht types waarop het productie-endpoint geabonneerd is, en meldt via Telegram elk event dat na vijftien minuten nog op `pending_webhooks > 0` staat. Gemelde event-ids worden onthouden in `.webhook-alerts`, dat in `.gitignore` staat, zodat één storing niet elk kwartier opnieuw piept. Bij een netwerk- of API-fout stopt hij stil, want een bewaker mag nooit zelf vals alarm slaan.
+
+De sleutel komt uit `secrets.local.ps1`. Staat daar een `$STRIPE_MONITOR_KEY`, dan gebruikt hij die; anders valt hij terug op de gewone sleutel. Zet daar een restricted key met alleen leesrecht op Events neer zodra je die aanmaakt in het Stripe-dashboard.
+
+Geverifieerd op echte data: over de laatste 24 uur nul treffers uit 16 events, dus geen vals alarm. Over dertig dagen exact de negen events van 11 en 22 augustus, dus de storing van augustus was binnen een kwartier gemeld in plaats van na negentien dagen.
