@@ -91,3 +91,47 @@ De drie beleidsstukken waarvan ik dacht dat "Vastgesteld en ontvangen" een regis
 De Word-export zet handgeplaatste rijen als tabellen van één rij. In Word is de regelafstand daardoor iets ruimer dan in de PDF, maar gelijkmatig en goed leesbaar. Niet veranderd: het is Word-eigen gedrag en geen kwaliteitsprobleem voor de klant.
 
 Het NIS2-rapport heette in de catalogus "NIS2 Compliance Strategy & Gap Analysis" en die Engelse naam stond in de documenttitel, de voettekst, de bestandsnaam en de metadata van een Nederlandse klant. Nu "NIS2-compliancerapport en gap-analyse". Alleen de catalogusnaam gewijzigd, geen id en geen juridische inhoud. Meteen ook `org_name` toegevoegd aan de eigenaarsvelden, zodat privacyverklaringen en rapporten de klant als auteur krijgen in plaats van de documenttitel.
+
+## Regressie na de drie fixes, 8 september 2026
+
+De drie punten uit de acceptatietest zijn toegepast en nagemeten in de draaiende app, niet alleen in de tests.
+
+Documenttitel uit de catalogus. `useDocumentDownload` haalt de naam nu uit `DOCUMENT_TEMPLATES` op basis van `doc.type`, met de opgeslagen titel als terugval. De catalogus wordt pas bij het downloaden ingeladen, dus de bundel groeit met een paar kilobytes. Bewijs: dezelfde arbeidsovereenkomst direct na genereren en later uit de kluis levert een identieke `document.xml`, dezelfde bestandsnaam en dezelfde metadata, en in de PDF verschilt alleen het aanmaaktijdstip.
+
+Knoppenrij op de telefoon. Eén klassewijziging, `flex-wrap` met `sm:flex-nowrap`. Op 320, 375, 390 en 430 pixels staan alle drie de knoppen volledig in beeld, met de Word-knop op 135 pixels. Vanaf de `sm`-breedte is de opmaak aantoonbaar ongewijzigd: met de oude klassen teruggezet in de browser is de overloop op 640 pixels exact gelijk.
+
+Namen die met "De" beginnen. De rolherkenning matcht nu op een lijst van echte rolwoorden in plaats van op een kaal lidwoord. "De Vries Techniek B.V." staat als naam boven de rol "Werkgever", zowel in de spec als in de gerenderde PDF en het Word-bestand.
+
+### Twee defecten die deze ronde bovenkwamen
+
+De Word-export kent de briefvorm niet. `docx.ts` heeft geen tak voor `style === 'letter'`, dus 66 van de 233 sjablonen krijgen in Word een contractblok met "Datum: ____" en "Handtekening", terwijl de PDF eindigt met witruimte boven de afzendernaam zoals een brief hoort te eindigen. De tekstvergelijking tussen beide formaten laat het direct zien: "Datum:" en "Handtekening" komen alleen in het Word-bestand voor.
+
+Dertien sjablonen noemen zichzelf twee keer. `withTitle` ontdubbelt alleen koppen langer dan acht tekens, dus "FACTUUR" onder de titel "Factuursjabloon" glipt erdoor. Op een echte factuur van een klant staat daardoor het woord sjabloon. Hetzelfde patroon bij onder meer de borgstelling, de managementovereenkomst, het nulurencontract en de franchiseovereenkomst.
+
+Beide zaten er al voor deze ronde in en zijn niet aangeraakt, want de opdracht was drie fixes en een regressie. Ze liggen ter beoordeling bij [[Ali Can]].
+
+## Exportkwaliteitspoort, 8 september 2026
+
+De twee klantzichtbare defecten van deze ochtend zijn dicht, plus twee die tijdens de controle bovenkwamen.
+
+De Word-export kende de briefvorm niet. `docx.ts` had geen tak voor `style === 'letter'`, dus 66 sjablonen kregen in Word een contractblok met "Datum: ____" en "Handtekening". Er staat nu dezelfde tak als in de PDF-motor: afsluitzin, ondertekenruimte, naam vet, rol eronder. Beslist op het semantische model, niet op sjabloon-id's, dus een brief blijft een brief in beide formaten. Bewezen door het Word-bestand in Word zelf te openen, naar PDF te exporteren en de pagina's naast elkaar te leggen: identiek.
+
+Dertien sjablonen noemden zichzelf twee keer. `withTitle` keek alleen naar koppen en naar regelblokken van precies één regel, en ontdubbelde alleen boven de acht tekens. Nu herkent het een getekende titelbanner (eerste regel vet, wat eronder staat platter) en verwijdert alleen die regel, zodat het factuurnummer en de factuurdatum blijven staan. De ondergrens is vijf tekens voor een banner en negen voor een gewone kop, zodat "Verhuurder" in de verhuurdersverklaring gewoon een kopje blijft.
+
+De catalogusnaam "Factuursjabloon" is "Factuur" geworden. Het woord sjabloon hoort niet op de factuur van een klant. Alleen de titel gewijzigd, niet het id en niet de inhoud.
+
+Twee vondsten uit de poort zelf. De Word-export zette altijd een voettekst, terwijl de PDF er op een document van één pagina bewust geen zet: een factuur kreeg dus "Factuur | Pagina 1 van 1" in Word en niets in de PDF. De app-route geeft nu `withFooter` door op basis van de PDF-paginatelling. En de dashboardpagina schoof op een telefoon horizontaal weg: `main` is een flex-kind zonder `min-w-0` en wilde daardoor niet onder zijn eigen min-content krimpen. Eén klasse erbij, en de overloop is op 320, 375, 390 en 430 pixels nul.
+
+Bewijs: 149 tests, build groen, 932 documenten zonder tekst buiten de kolom, en een scan die de tekst terugleest uit 233 PDF's en 18 Word-bestanden en zoekt op productnaam, sjabloon, template, concept, veldnamen en database-id's. Vijf treffers, alle vijf echte juridische taal: "Notarieel Concept" bij de statuten en het testament, en "concept-content" in de influencerovereenkomst. Bedragen opnieuw door alle negen notaties gehaald, van `4750` tot `1,500,000`, allemaal goed, en de factuur handmatig nagerekend: 4.750,00 plus 21 procent is 997,50, totaal 5.747,50.
+
+### Factuuropmaak, 8 september 2026
+
+Laatste punt van de poort: op de factuur stond het bedrag onder de omschrijving in plaats van in de kolom Bedrag, en de totaalregels braken over twee regels.
+
+Twee oorzaken, allebei in de factuursjabloon zelf en niet in de motor. De omschrijving werd getekend met `addWrappedText` (dat legt een alinea vast) terwijl het bedrag met een geplaatste `doc.text` kwam, dus de recorder kon ze nooit tot één rij koppelen. En de regel werd getekend binnen de nawerking van de grijze kopbalk, waardoor hij het kleine vette kopletterbeeld erfde. Nu staan omschrijving en bedrag als twee geplaatste teksten op dezelfde regel, veertien millimeter onder de kopbalk. De layout breekt de omschrijving netjes af binnen de kolom Omschrijving en het bedrag blijft onder Bedrag staan, ook bij een omschrijving van negen regels.
+
+De totaallabels stonden dertig millimeter voor de bedragkolom. Die afstand wordt omgerekend naar de documentmaat en de tekst wordt in de bodygrootte gezet, dus er bleef tweeëntwintig millimeter over voor "Subtotaal excl. BTW:". Nu vijfentachtig millimeter voor de bedragkolom, wat op tweeënveertig uitkomt. Alle drie de totaalregels passen op één regel, met het eindtotaal vet.
+
+De wijziging zit volledig binnen de tak `templateId === 'factuur'`, dus geen ander sjabloon kan geraakt zijn. Nagemeten: 932 documenten, 233 PDF's en 18 Word-bestanden zonder applicatietekst, dezelfde paginatelling voor alle vijftien gecontroleerde documenten als voor de wijziging, 149 tests, build groen. Het Word-bestand is in Word geopend: één pagina, achtenzeventig woorden, dezelfde uitlijning als de PDF.
+
+De echte factuur uit de app: 4.750,00 plus 21 procent is 997,50, totaal 5.747,50, met De Vries Techniek B.V. als afzender en Bouwgroep Terwijde B.V. als klant.
