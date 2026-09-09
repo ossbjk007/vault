@@ -1,10 +1,16 @@
 ---
-type: notes
-date: 2026-08-06
-status: actief
-tags: [thema, planning, ZekerWet]
+type: archief
+date: 2026-09-09
+status: gearchiveerd
+tags: [archief, marketing, ZekerWet]
 project: ZekerWet
 ---
+
+> [!warning] Gearchiveerd op 9 september 2026. Niet meer geldig.
+> De 4-weekse thema-rotatie is vervangen door wekelijkse pijler-weging in het marketing-systeem
+> (`zekerwet/marketing/data/pillars.json`). Reden: de cyclus werd elke keer met de hand herberekend
+> vanaf 10 augustus en liep daardoor drie weken uit de pas. Week 1 (Wet DBA) en week 2 (AVG) zijn
+> nooit gedraaid. De cyclus-positie wordt nu opgeslagen, niet berekend. Zie [[ZekerWet]].
 
 Contentcyclus van [[ZekerWet]]: 4 weken, daarna herhalen.
 

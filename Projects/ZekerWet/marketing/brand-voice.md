@@ -14,7 +14,16 @@ Professioneel maar toegankelijk. Geen jargon. Directe "je"-vorm voor ZZPers en M
 
 Bewijs boven belofte. Citeer altijd een bron: Belastingdienst, KVK, Burgerlijk Wetboek, AVG-artikel, AP-richtlijn.
 
-Specifiek, niet vaag. Niet: "Veel ZZPers gebruiken verkeerde contracten." Wel: "67% van de ZZPers heeft geen modelovereenkomst die voldoet aan de Wet DBA per 2026."
+Specifiek, niet vaag. En bij voorkeur uit de wet, niet uit een cijfer.
+
+Niet: "Veel ZZPers gebruiken verkeerde contracten."
+Ook niet: "67% van de ZZPers heeft geen modelovereenkomst die voldoet aan de Wet DBA." Dat cijfer stond hier tot 9 september 2026 als voorbeeld, zonder bron. Een onvindbaar percentage in het voorbeeld dat alle andere posts naschrijven is duurder dan een losse fout.
+
+Wel: "Of een opdracht juridisch een dienstverband is, hangt niet af van wat er boven het contract staat. Art. 7:610 BW kent drie criteria: persoonlijke arbeid, loon en een gezagsverhouding. Zijn die alle drie aanwezig, dan is het een arbeidsovereenkomst, ongeacht de titel van het document."
+
+Dat is controleerbaar, het verjaart niet, en het is sterker dan een percentage. Een wetsfeit kun je aanwijzen.
+
+**Bindende regel.** Een empirische statistiek mag alleen de deur uit met een vindbare, benoemde bron in `marketing/data/claims.json`. Geen bron, geen post: de validatiepoort blokkeert hard. Schrijf een claim liever uit de wet dan uit een getal. En koppel nooit een empirische bewering aan een wet die die bewering niet doet: "9 van de 10 ... dat staat in de WAB" is precies die fout, want de WAB stelt de voorwaarden waaronder een beding sneuvelt, hij telt niet hoeveel er sneuvelen.
 
 ## Zinsritme
 

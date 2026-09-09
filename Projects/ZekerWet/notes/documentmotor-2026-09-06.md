@@ -135,3 +135,13 @@ De totaallabels stonden dertig millimeter voor de bedragkolom. Die afstand wordt
 De wijziging zit volledig binnen de tak `templateId === 'factuur'`, dus geen ander sjabloon kan geraakt zijn. Nagemeten: 932 documenten, 233 PDF's en 18 Word-bestanden zonder applicatietekst, dezelfde paginatelling voor alle vijftien gecontroleerde documenten als voor de wijziging, 149 tests, build groen. Het Word-bestand is in Word geopend: één pagina, achtenzeventig woorden, dezelfde uitlijning als de PDF.
 
 De echte factuur uit de app: 4.750,00 plus 21 procent is 997,50, totaal 5.747,50, met De Vries Techniek B.V. als afzender en Bouwgroep Terwijde B.V. als klant.
+
+### Factuurinhoud, 9 september 2026
+
+Twee inhoudelijke punten die pas opvielen toen [[Ali Can]] een echte factuur uit de live app haalde.
+
+Het factuurnummer werd afgeleid van de factuurdatum, `FAC-<datum>`, en het sjabloon vroeg er niet naar. Twee facturen op dezelfde dag kregen dus hetzelfde nummer, terwijl Wet OB art. 35a lid 1 sub c een nummer eist waarmee de factuur eenduidig te identificeren is, en het sjabloon in zijn eigen omschrijving belooft daaraan te voldoen. Er staat nu een optionele vraag "Factuurnummer" aan het eind van de vragenlijst. Vult de ondernemer zijn eigen doorlopende nummer in, dan wint dat; laat hij het leeg, dan blijft het oude nummer op datum staan. De vragenlijst gaat daarmee van tien naar elf stappen.
+
+De vervaldatum stond er als formule: "(30 dagen na factuurdatum)". Dat leest als een aantekening aan jezelf, niet als informatie voor de klant. De datum wordt nu uitgerekend en als ISO-datum de pijplijn in gestuurd, zodat `dutchDates` er "31 oktober 2026" van maakt. Gerekend in UTC, zodat de tijdzone van de browser er niet toe doet, en met een terugval op de oude zin als de datum niet te lezen is.
+
+Nagemeten: 1 oktober plus dertig dagen is 31 oktober, 20 december rolt netjes door naar 19 januari 2027. Verder 149 tests, build groen, 932 documenten zonder tekst buiten de kolom, en dezelfde vijf legitieme "Concept"-treffers als daarvoor. De wijziging zit in de factuurtak en in één regel van de vragenlijst, dus geen ander sjabloon is geraakt.
