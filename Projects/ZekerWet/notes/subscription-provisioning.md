@@ -75,3 +75,10 @@ De idempotency-markering werd weggeschreven vóór de handler draaide. Faalde de
 De sleutel komt uit `secrets.local.ps1`. Staat daar een `$STRIPE_MONITOR_KEY`, dan gebruikt hij die; anders valt hij terug op de gewone sleutel. Zet daar een restricted key met alleen leesrecht op Events neer zodra je die aanmaakt in het Stripe-dashboard.
 
 Geverifieerd op echte data: over de laatste 24 uur nul treffers uit 16 events, dus geen vals alarm. Over dertig dagen exact de negen events van 11 en 22 augustus, dus de storing van augustus was binnen een kwartier gemeld in plaats van na negentien dagen.
+
+## Handmatig herstel als een webhook niet is afgeleverd
+
+Als een betaling wel bij Stripe binnenkomt maar het abonnement niet in de app landt, is het herstel een `prisma.user.upsert` op de gebruikersrij met de vier Stripe-velden overgenomen uit het webhook-logboek in het Stripe-dashboard. Dat is precies wat er in september 2026 eenmalig voor een klant is gedaan.
+
+> [!warning] Schrijf zo'n herstelscript nooit met klantgegevens erin naar de repo.
+> Het script dat hiervoor bestond had een e-mailadres en de `cus_` en `sub_` identifiers hardcoded en stond untracked in de projectmap, buiten `.gitignore`. Eén `git add -A` en het had permanent in de geschiedenis gestaan van een product dat AVG-compliance verkoopt. Op 10 september 2026 verwijderd. Doe het voortaan met de identifiers als argumenten op de commandoregel, of rechtstreeks in een databaseclient.
