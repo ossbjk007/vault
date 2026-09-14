@@ -1,3 +1,14 @@
 .obsidian/workspace*
 .DS_Store
 __pycache__/
+
+# Geheimen en lokale scriptstatus, nooit committen
+scripts/secrets.local.ps1
+scripts/.gemini-model-version
+scripts/.sid-payment-resolved
+
+scripts/.webhook-alerts
+scripts/.notify-failures.log
+
+# Eenmalig herstelscript met klantgegevens erin, nooit committen (regel 16)
+scripts/check-sid-payment.ps1

@@ -8,7 +8,7 @@ Set-Location $vault
 $status = git status --porcelain
 if (-not $status) { exit 0 }
 
-git add Context Daily Projects Intelligence Resources
+git add Context Daily Projects Intelligence Resources scripts CLAUDE.md .gitignore
 $date = Get-Date -Format "yyyy-MM-dd HH:mm"
 git commit -m "auto-commit $date"
 

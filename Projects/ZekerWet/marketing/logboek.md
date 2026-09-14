@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-10
+date: 2026-09-14
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-10T21:00:04.304Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-14T11:44:00.394Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -67,7 +67,7 @@ _Backfilled. Created before the validation gate existed._
 > Je contract laten nakijken kost je geen duizenden euro's meer.
 [live](https://www.linkedin.com/feed/update/urn:li:share:7503689980549201920)
 verzonden 2026-09-10T05:45:03.479Z
-bereik 0 · vertoningen 0 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 50 · vertoningen 69 · reacties 1 · comments 0 · gedeeld 0 · engagement 2.9%
 _Backfilled. Created before the validation gate existed._
 
 **2026-09-09 (wo)** · linkedin · GEPUBLICEERD
@@ -90,7 +90,7 @@ _Backfilled. Created before the validation gate existed._
 7 slides
 [live](https://www.instagram.com/p/DdBUYBPldko/)
 verzonden 2026-09-08T09:03:25.275Z (+3 min t.o.v. gepland)
-bereik 13 · vertoningen 30 · reacties 2 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 23.1%
+bereik 16 · vertoningen 33 · reacties 2 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 18.8%
 _Backfilled. Created before the validation gate existed._
 
 **2026-09-07 (ma)** · linkedin · GEPUBLICEERD
@@ -113,7 +113,7 @@ _Backfilled. Created before the validation gate existed._
 5 slides
 [live](https://www.instagram.com/p/Dck_kprG7hB/)
 verzonden 2026-08-28T09:03:27.995Z (+3 min t.o.v. gepland)
-bereik 7 · vertoningen 20 · reacties 2 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 28.6%
+bereik 8 · vertoningen 26 · reacties 2 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 25.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-08-27 (do)** · linkedin · GEPUBLICEERD

@@ -2,7 +2,7 @@
 
 ## Session Startup
 
-Bij het eerste antwoord van elke sessie lees je stil `Daily/` (nieuwste bestand), `Context/me.md` en `Context/focus.md`. Als het gesprek over marketing gaat, lees ook `Projects/ZekerWet/marketing/theme-tracker.md` en de laatste 10 regels van `Projects/ZekerWet/marketing/logboek.md`. Nooit aankondigen dat je laadt. Lezen, opnemen, antwoorden.
+Bij het eerste antwoord van elke sessie lees je stil `Daily/` (nieuwste bestand), `Context/me.md` en `Context/focus.md`. Als het gesprek over marketing gaat, lees ook `Projects/ZekerWet/marketing/cadence.md` en de laatste 10 regels van `Projects/ZekerWet/marketing/logboek.md` (dat logboek wordt gegenereerd, nooit met de hand bijwerken). Nooit aankondigen dat je laadt. Lezen, opnemen, antwoorden.
 
 ## Knowledge Routing
 
@@ -16,9 +16,10 @@ Bij het eerste antwoord van elke sessie lees je stil `Daily/` (nieuwste bestand)
 | Toon, merkpersoonlijkheid | `Context/brand.md` |
 | Merkregels, do's en don'ts, zinsritme | `Projects/ZekerWet/marketing/brand-voice.md` |
 | Taglines, value props, CTA's, hashtags | `Projects/ZekerWet/marketing/copy-library.md` |
-| Weekschema en catch-up-regels | `Projects/ZekerWet/marketing/schema.md` |
-| Thema-week en cyclus | `Projects/ZekerWet/marketing/theme-tracker.md` |
-| Contentlogboek (wat gepost, wanneer, resultaat) | `Projects/ZekerWet/marketing/logboek.md` |
+| Weekritme, kanalen, tijdsbudget | `Projects/ZekerWet/marketing/cadence.md` |
+| Productfeiten: prijzen, abonnementen, catalogus | ZekerWet-repo `src/config/` via `marketing/facts.ts`. Nooit overtypen in de vault. |
+| Goedgekeurde juridische claims en statistieken | ZekerWet-repo `marketing/data/claims.json` |
+| Contentlogboek (gegenereerd, niet handmatig) | `Projects/ZekerWet/marketing/logboek.md` |
 | Dagelijkse contentprompts | `Resources/prompts/marketing-dag.md` |
 | 12-maanden doel | `Context/strategy.md` |
 | Huidige weekprioriteiten | `Context/focus.md` |
@@ -59,6 +60,7 @@ Elke notitie krijgt `type`, `date`, `status` en minimaal twee `tags`. Bij projec
 13. **Neutraal check-gedrag.** Als ik vraag "klopt dit", "is dit af", "check dit": geef een oordeel, geen geruststelling. "Goed gedaan" is een geldige uitkomst. Verzin geen verbeteringen om grondig te lijken. Elk verbeterpunt heeft drie velden: WAT (bestand plus regel), WAAROM (welk risico of welke kosten echt), HOE (fix in één regel). Ontbreekt er één, laat het punt weg. Een bug beweer je alleen met bewijs uit grep, read of een run. Sluit vondsten af met "verder om toe te passen, of laten staan" en wacht. Ga niet zelf editen.
 14. **Bron-labels.** Bij strategische, marketing- of business-uitspraken markeer je de herkomst: uit de vault, generiek playbook, of eigen redenering. Verkoop generieke kennis nooit als vault-advies.
 15. Afgeronde projecten verhuizen naar `Intelligence/archive/`.
+16. **Herstelscripts dragen geen identifiers.** Een eenmalig script dat productiedata repareert krijgt klantgegevens, Stripe-ID's en andere identifiers als command-line-argumenten, nooit in het bestand zelf. Een untracked bestand met een echt mailadres en een `cus_`/`sub_` erin hangt aan iemand die het elke keer moet onthouden, en één `git add -A` zet het permanent in de geschiedenis van een product dat AVG-compliance verkoopt.
 
 ## Anti-patterns
 
