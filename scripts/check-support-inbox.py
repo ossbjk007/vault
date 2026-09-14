@@ -39,6 +39,13 @@ STATE_TTL_DAYS = 60
 
 DRY = "--dry-run" in sys.argv
 
+# De Windows-console staat op cp1252 en struikelt over emoji in de dry-run-uitvoer.
+for stream in (sys.stdout, sys.stderr):
+    try:
+        stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 
 def env(name):
     v = os.environ.get(name, "").strip()
