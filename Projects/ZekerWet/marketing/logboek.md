@@ -7,7 +7,7 @@ project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-14T15:17:16.055Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-14T22:00:08.731Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >

@@ -18,4 +18,4 @@ Traffic: organisch via Instagram, Facebook, Twitter en LinkedIn. Nog geen betaal
 Bottleneck 1: inconsistentie in tijd en aandacht. Heeft een systeem en discipline nodig.
 Bottleneck 2: het aantrekken van traffic en klanten.
 
-Accounts: Google-zaken van [[ZekerWet]] (Gemini API-key in AI Studio, Search Console) staan op `ossbjk@gmail.com`. `zekerwet@gmail.com` is de mailbox waar `info@zekerwet.nl` binnenkomt. Vercel-team `ossbjk007s-projects`, GitHub `ossbjk007`.
+Accounts: Google-zaken van [[ZekerWet]] (Gemini API-key in AI Studio, Search Console) en het Clerk-dashboard staan op `ossbjk@gmail.com`. `aceberghem@gmail.com` is alleen `ADMIN_EMAILS` in de app. `zekerwet@gmail.com` is de mailbox waar `info@zekerwet.nl` binnenkomt. Vercel-team `ossbjk007s-projects`, GitHub `ossbjk007`.
