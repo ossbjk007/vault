@@ -8,6 +8,7 @@ scripts/.gemini-model-version
 scripts/.sid-payment-resolved
 
 scripts/.webhook-alerts
+scripts/.support-inbox-alerts
 scripts/.notify-failures.log
 
 # Eenmalig herstelscript met klantgegevens erin, nooit committen (regel 16)

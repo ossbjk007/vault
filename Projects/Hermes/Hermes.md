@@ -38,3 +38,5 @@ Terugkomen als één van deze twee waar is:
 2. Eerste betalende klanten, en tijd wordt schaarser dan geld.
 
 Dan: OpenRouter betaald met de nieuwste Claude Sonnet als standaard (geen gratis model, die loggen prompts en voeren tools niet betrouwbaar uit), GitHub-token vernieuwen, testtaak kennisbankconcept, daarna Telegram en cron. SOUL.md staat klaar.
+
+Reddit, 14 september 2026: het API-verzoek onder de Responsible Builder Policy is afgewezen. Niet opnieuw aanvragen en niet met een onjuiste niet-commerciële verklaring. Reddit stond al bij "niet doen" hierboven; wat er te halen valt is handmatig antwoorden op vragen van ZZP'ers, en daar is geen API voor nodig.

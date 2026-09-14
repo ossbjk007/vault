@@ -14,4 +14,4 @@ Bezwaar in de checkout:
 1. Of het wel betrouwbaar is en of het wel echt net zo goed is als een echte jurist of advocaat.
 2. Privacy: ze delen belangrijke informatie en willen weten of dat veilig is.
 
-Klantzinnen: TBD, nog geen klanten. Zie [[pain-points]] voor zodra die binnenkomen. Nieuwe klantzinnen na de setup landen in `Projects/ZekerWet/research/voc/`.
+Klantzinnen: nog geen eigen klanten geïnterviewd, zie [[pain-points]]. Eerste woordelijke zinnen van ZZP'ers en opdrachtgevers van fora staan sinds 14 september 2026 in [[modelovereenkomst-2026]] (`Projects/ZekerWet/research/voc/`). Opvallendste: een fiscalist benoemt het bezwaar "AI-tool kent geen juridisch kader voor schijnzelfstandigheid" letterlijk, dat is bezwaar 1 hierboven uit de mond van de adviseur die de klant nu vertrouwt.
