@@ -1,6 +1,6 @@
 ---
 type: context
-date: 2026-09-14
+date: 2026-09-16
 status: actief
 tags: [aanbod, ZekerWet, pricing]
 project: ZekerWet
@@ -16,8 +16,8 @@ Losse documenten zonder abonnement, bron `src/config/documents.ts`: Basis 14,99,
 
 Kosten per klant: alleen de AI-kosten die een klant maakt bij gebruik van het platform. Al sterk gereduceerd.
 
-CAC: TBD, nog geen klanten.
-AOV: TBD, afhankelijk van abonnementsvorm.
+CAC: nul euro uit eigen zak, de enige klant kwam organisch binnen. Zegt nog niets, want er is geen betaald kanaal getest.
+AOV: 49,99 per maand, gebaseerd op één klant ([[Yvonne Heiligers]], Business). Te weinig om op te sturen.
 
 Belofte aan de klant: ongelimiteerde toegang tot 230+ juridische documenten en brieven die een ondernemer nodig heeft om zijn zaken op orde te krijgen.
 

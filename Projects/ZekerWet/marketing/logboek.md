@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-14
+date: 2026-09-16
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-14T22:00:08.731Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-16T22:00:09.908Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -16,7 +16,7 @@ project: ZekerWet
 
 Contentlogboek van [[ZekerWet]]. 57 items.
 
-wacht op handmatige bevestiging: 2 · GEANNULEERD: 2 · GEPUBLICEERD: 49 · naar Buffer gestuurd: 4
+wacht op handmatige bevestiging: 1 · GEANNULEERD: 2 · GEPUBLICEERD: 51 · naar Buffer gestuurd: 3
 
 ---
 
@@ -42,15 +42,19 @@ campagne wetdba-handhaving-2026 · pijler ai-review
 bereik 0 · vertoningen 0 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
-**2026-09-16 (wo)** · x · wacht op handmatige bevestiging
+**2026-09-16 (wo)** · x · GEPUBLICEERD
 > Niemand kiest bewust voor een gezagsverhouding.
 campagne wetdba-handhaving-2026 · pijler legal-pain
+[live](https://x.com/ZekerWet/status/2100171818824867919)
+verzonden 2026-09-16T11:41:29.212Z (+296 min t.o.v. gepland)
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
-**2026-09-15 (di)** · linkedin · naar Buffer gestuurd
+**2026-09-15 (di)** · linkedin · GEPUBLICEERD
 > "ZZP" boven het contract is geen bescherming. Het is een label.
 campagne wetdba-handhaving-2026 · pijler legal-pain
-bereik 0 · vertoningen 0 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+[live](https://www.linkedin.com/feed/update/urn:li:share:7505501918782283776)
+verzonden 2026-09-15T05:45:03.221Z
+bereik 7 · vertoningen 17 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
 **2026-09-11 (vr)** · facebook · GEANNULEERD
@@ -67,7 +71,7 @@ _Backfilled. Created before the validation gate existed._
 > Je contract laten nakijken kost je geen duizenden euro's meer.
 [live](https://www.linkedin.com/feed/update/urn:li:share:7503689980549201920)
 verzonden 2026-09-10T05:45:03.479Z
-bereik 50 · vertoningen 69 · reacties 1 · comments 0 · gedeeld 0 · engagement 2.9%
+bereik 64 · vertoningen 99 · reacties 1 · comments 0 · gedeeld 0 · engagement 7.1%
 _Backfilled. Created before the validation gate existed._
 
 **2026-09-09 (wo)** · linkedin · GEPUBLICEERD
@@ -120,14 +124,14 @@ _Backfilled. Created before the validation gate existed._
 > Een manager stuurde zijn medewerker een e-mail: Je functioneert niet goed. Dit kan zo niet…
 [live](https://www.linkedin.com/feed/update/urn:li:share:7498616555098767360)
 verzonden 2026-08-27T05:45:04.564Z
-bereik 23 · vertoningen 41 · reacties 1 · comments 0 · gedeeld 0 · engagement 9.8%
+bereik 24 · vertoningen 49 · reacties 1 · comments 0 · gedeeld 0 · engagement 10.2%
 _Backfilled. Created before the validation gate existed._
 
 **2026-08-26 (wo)** · linkedin · GEPUBLICEERD
 > Een vaststellingsovereenkomst opstellen kost gemiddeld 3 tot 6 uur advocaattijd. Dat is ee…
 [live](https://www.linkedin.com/feed/update/urn:li:share:7498250411305328640)
 verzonden 2026-08-26T05:30:09.033Z
-bereik 2 · vertoningen 7 · reacties 0 · comments 0 · gedeeld 0 · engagement 14.3%
+bereik 4 · vertoningen 15 · reacties 1 · comments 0 · gedeeld 0 · engagement 13.3%
 _Backfilled. Created before the validation gate existed._
 
 **2026-08-25 (di)** · facebook · GEPUBLICEERD
@@ -163,7 +167,7 @@ _Backfilled. Created before the validation gate existed._
 > 9 van de 10 concurrentiebedingen in tijdelijke contracten zijn nietig.
 [live](https://www.linkedin.com/feed/update/urn:li:share:7497529386653380608)
 verzonden 2026-08-24T05:45:03.370Z
-bereik 119 · vertoningen 133 · reacties 1 · comments 0 · gedeeld 0 · engagement 1.5%
+bereik 120 · vertoningen 138 · reacties 1 · comments 0 · gedeeld 0 · engagement 1.4%
 _Backfilled. Created before the validation gate existed._
 
 **2026-06-10 (wo)** · instagram · GEPUBLICEERD
@@ -179,7 +183,7 @@ _Backfilled. Created before the validation gate existed._
 1 slides
 [live](https://www.linkedin.com/feed/update/urn:li:share:7470484353610055680)
 verzonden 2026-06-10T14:37:45.019Z
-bereik 2 · vertoningen 4 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 3 · vertoningen 5 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-06-10 (wo)** · instagram · GEPUBLICEERD
@@ -203,7 +207,7 @@ _Backfilled. Created before the validation gate existed._
 7 slides
 [live](https://www.linkedin.com/feed/update/urn:li:ugcPost:7470476890621919233)
 verzonden 2026-06-10T14:08:05.642Z
-bereik 2 · vertoningen 3 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 3 · vertoningen 4 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-06-10 (wo)** · facebook · GEPUBLICEERD
@@ -219,7 +223,7 @@ _Backfilled. Created before the validation gate existed._
 7 slides
 [live](https://www.linkedin.com/feed/update/urn:li:ugcPost:7469780089765957632)
 verzonden 2026-06-08T15:59:15.413Z
-bereik 2 · vertoningen 2 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 3 · vertoningen 3 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-06-08 (ma)** · instagram · GEPUBLICEERD
@@ -235,7 +239,7 @@ _Backfilled. Created before the validation gate existed._
 1 slides
 [live](https://www.linkedin.com/feed/update/urn:li:share:7468276635113422848)
 verzonden 2026-06-04T12:25:03.886Z
-bereik 2 · vertoningen 8 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 3 · vertoningen 9 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-06-04 (do)** · linkedin · GEPUBLICEERD
@@ -243,7 +247,7 @@ _Backfilled. Created before the validation gate existed._
 1 slides
 [live](https://www.linkedin.com/feed/update/urn:li:share:7468269244523102209)
 verzonden 2026-06-04T11:55:41.838Z
-bereik 2 · vertoningen 9 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 3 · vertoningen 10 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-06-02 (di)** · instagram · GEPUBLICEERD
@@ -338,7 +342,7 @@ _Backfilled. Created before the validation gate existed._
 1 slides
 [live](https://www.linkedin.com/feed/update/urn:li:share:7463182996221730816)
 verzonden 2026-05-21T11:04:45.744Z
-bereik 2 · vertoningen 33 · reacties 1 · comments 0 · gedeeld 0 · engagement 3.0%
+bereik 2 · vertoningen 33 · reacties 2 · comments 0 · gedeeld 0 · engagement 6.1%
 _Backfilled. Created before the validation gate existed._
 
 **2026-05-21 (do)** · linkedin · GEPUBLICEERD

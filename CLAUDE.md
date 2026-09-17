@@ -25,6 +25,7 @@ Bij het eerste antwoord van elke sessie lees je stil `Daily/` (nieuwste bestand)
 | Huidige weekprioriteiten | `Context/focus.md` |
 | Dagelijkse log, taken, inbox | `Daily/YYYY-MM-DD.md` |
 | Projectstatus en volgende stap | `Projects/{naam}/{naam}.md` |
+| Klantwerk Back Ignition (site, domein, Vercel) | `Projects/BackIgnition/BackIgnition.md`, code in `C:\Users\acerd\dev\back-ignition\` |
 | Nieuwe klantzinnen na setup | `Projects/{merk}/research/voc/` |
 | Concurrentie-analyse | `Intelligence/competitors/{merk}-concurrenten.md` |
 | Advertentie-tests | `Projects/{merk}/notes/tests.md` |
@@ -63,6 +64,8 @@ Elke notitie krijgt `type`, `date`, `status` en minimaal twee `tags`. Bij projec
 16. **Klantmails vanuit het systeem, niet vanuit ik.** Mails aan klanten van ZekerWet schrijf je vanuit wat het account of het systeem heeft gezien ("in je account is op 4 september X opgesteld"), niet vanuit "ik zag dat". Geen praatjes als "zonde van je geld". Feit, wetsartikel, wat beschikbaar is. Ondertekend met ZekerWet.
 17. **Eerst de inbox, dan de klantmail.** Vóór het opstellen van een mail aan een klant: vraag of controleer of er al mail van die klant ligt in de Gmail-box (`support@` en `info@zekerwet.nl` komen daar via ImprovMX binnen). Een activatiemail bovenop een onbeantwoorde supportvraag is erger dan geen mail.
 18. **Herstelscripts dragen geen identifiers.** Een eenmalig script dat productiedata repareert krijgt klantgegevens, Stripe-ID's en andere identifiers als command-line-argumenten, nooit in het bestand zelf. Een untracked bestand met een echt mailadres en een `cus_`/`sub_` erin hangt aan iemand die het elke keer moet onthouden, en één `git add -A` zet het permanent in de geschiedenis van een product dat AVG-compliance verkoopt.
+19. **Klantwerk blijft gescheiden.** [[Back Ignition]] en ander klantwerk krijgen een eigen map onder `Projects/`, een eigen repo onder `C:\Users\acerd\dev\` en een eigen Vercel-project. Nooit in de ZekerWet-repo, nooit in `Projects/ZekerWet/`, nooit in een tijdelijke map. Bron van een site staat in een git-repo vóór hij deployt. Geen enkele gedeelde schakel tussen klantwerk en ZekerWet: geen gedeeld Vercel-team, geen gedeelde login-koppeling, geen gedeeld GitHub-account, geen gedeeld mailadres. Als een stap zo'n schakel zou maken, stop en meld het in plaats van doorgaan.
+20. **Eén GitHub-account, één Vercel-account.** GitHub `ossbjk007` is de login-koppeling van het ZekerWet-Vercel-account (`ossbjk@gmail.com`) en blijft dat. Een GitHub-account kan maar aan één Vercel-account gekoppeld zijn; koppel je hem aan een klantaccount, dan verliest ZekerWet hem en blokkeert Vercel elke productie-deploy (gebeurd op 16 september 2026). Klantaccounts krijgen géén GitHub-koppeling: hun repo's deployen doordat de commit-e-mail gelijk is aan het mailadres van dat Vercel-account (`git config user.email` per repo).
 
 ## Anti-patterns
 
