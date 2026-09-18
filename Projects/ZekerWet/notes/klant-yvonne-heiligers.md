@@ -32,6 +32,8 @@ Let op bij het lezen van de database: `Document.content` bevat alleen de formuli
 
 Activatiemail geschreven op 14 september: [[mail-yvonne-heiligers-activatie]]. Niet los versturen: het antwoord op haar supportmail staat in [[mail-yvonne-heiligers-support-antwoord]], met de activatie-inhoud als tweede deel.
 
+Vijf validatievragen verstuurd op 17 september 2026 om 15:47: [[mail-yvonne-heiligers-vijf-vragen]]. Antwoord open.
+
 Gerelateerd: [[subscription-provisioning]] (hier werkte de provisioning wél, `stripePriceId` staat op `price_business`), [[klant-murmurly]].
 
 ## Clerk-dashboard nagekeken, 15 september 2026

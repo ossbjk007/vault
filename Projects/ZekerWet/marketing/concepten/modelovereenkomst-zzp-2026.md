@@ -1,7 +1,7 @@
 ---
 type: concept
 date: 2026-09-14
-status: concept
+status: in repo, commit c183278, nog niet gedeployed
 tags: [kennisbank, wet-dba, modelovereenkomst, seo, ZekerWet]
 project: ZekerWet
 ---
@@ -106,6 +106,8 @@ Twijfel je of een lopende opdracht schijnzelfstandigheid is? De Beoordeling Schi
 Genereer een overeenkomst van opdracht op zekerwet.nl/documenten/opdracht. Of lees eerst het basisartikel over de Wet DBA in de kennisbank.
 
 Laat juridisch belangrijke documenten altijd nakijken door een jurist voor ondertekening. Dit artikel is algemene informatie, geen juridisch advies.
+
+> [!check] Beoordeeld door [[Ali Can]] op 17 september 2026: punt 1 tot en met 4 ja. Punt 5 op 17 september nagekeken op eerstekamer.nl: dossier 36.783 eindigt nog met de publicatie van 29 juni 2026, geen inwerkingtredingsbesluit; het artikel zegt dat met datum. Als `.tsx` in de repo gezet in commit `c183278`, alle acht artikelen door de poort, kennisbank-tests 18 van 18. Twee afwijkingen van het concept: de vervangingsclausule noemt art. 7:404 BW niet meer (staat niet in de claims-allowlist) en de datum van het Deliveroo-arrest staat als 24-3-2023 omdat de poort "maart 2023" als wetsartikel leest.
 
 ## Voor de juridische check, in volgorde van risico
 
