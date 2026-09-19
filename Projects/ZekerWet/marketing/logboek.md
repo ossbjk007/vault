@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-18
+date: 2026-09-19
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-18T10:00:12.459Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-19T18:18:25.322Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -68,6 +68,7 @@ _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel vo
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
 [live](https://www.instagram.com/p/Dda2kkQFu8o/)
 verzonden 2026-09-18T07:02:43.818Z (+3 min t.o.v. gepland)
+bereik 9 · vertoningen 21 · reacties 4 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 44.4%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
 **2026-09-17 (do)** · linkedin · GEPUBLICEERD

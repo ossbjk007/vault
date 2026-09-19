@@ -32,6 +32,9 @@ HERE = Path(__file__).resolve().parent
 STATE = HERE / ".support-inbox-alerts"
 FAILLOG = HERE / ".notify-failures.log"
 WATCHED = ("support@zekerwet.nl", "info@zekerwet.nl")
+# Mail die ZekerWet zelf naar support@ stuurt (dagelijks AI-kostenoverzicht van
+# noreply@) is geen klantvraag en hoort niet in de melding of de dagelijkse lijst.
+OWN_DOMAIN = "@zekerwet.nl"
 NAG_HOUR = 9
 NAG_AGE_HOURS = 24
 LOOKBACK_DAYS = 30
@@ -151,6 +154,8 @@ def main():
         except Exception:
             sent = now
         name, addr = parseaddr(hdr(msg, "From"))
+        if addr.lower().endswith(OWN_DOMAIN):
+            continue
         item = {
             "mid": mid, "from": name or addr, "addr": addr,
             "subject": hdr(msg, "Subject") or "(geen onderwerp)",

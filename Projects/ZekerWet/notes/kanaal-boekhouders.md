@@ -41,7 +41,7 @@ Dat is dertig kantoren zonder te zoeken in Nijmegen, Wijchen, Grave, Cuijk, Hees
 
 ## Het warme contact in Rosmalen
 
-[[Ali Can]] kent de eigenaren van een boekhoudkantoor in Rosmalen persoonlijk: hij heeft er een jaar gewerkt, kreeg kanker, zat anderhalf jaar in de ziektewet, en bij terugkeer bleek dat niet meer nodig. Hij kreeg een vertrekregeling. De relatie is nog vriendelijk en benaderbaar.
+Het kantoor heet [[VPKL]]; op 19 september 2026 door [[Ali Can]] aangewezen als het eerste van de drie kantoren voor de diagnosegesprekken. [[Ali Can]] kent de eigenaren persoonlijk: hij heeft er een jaar gewerkt, kreeg kanker, zat anderhalf jaar in de ziektewet, en bij terugkeer bleek dat niet meer nodig. Hij kreeg een vertrekregeling. De relatie is nog vriendelijk en benaderbaar.
 
 Oordeel, eigen redenering: dit is het beste startpunt dat er is, maar niet voor een verkoopgesprek. Twee redenen. Een partnervoorstel als eerste contact plaatst hem in de vragende positie tegenover de mensen die hem hebben laten gaan, en dat maakt een nee waarschijnlijker en pijnlijker dan nodig. En het verspilt wat dit contact uniek maakt: hij heeft een jaar van binnen gezien hoe een boekhoudkantoor werkt en heeft toegang tot mensen die hem vakinhoudelijk serieus nemen.
 
