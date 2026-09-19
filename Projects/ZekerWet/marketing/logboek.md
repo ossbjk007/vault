@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-17
+date: 2026-09-18
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-17T23:00:10.589Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-18T10:00:12.459Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -16,7 +16,7 @@ project: ZekerWet
 
 Contentlogboek van [[ZekerWet]]. 63 items.
 
-wacht op handmatige bevestiging: 1 · GEANNULEERD: 2 · GEPUBLICEERD: 52 · naar Buffer gestuurd: 2 · validated: 6
+wacht op handmatige bevestiging: 1 · GEANNULEERD: 2 · GEPUBLICEERD: 54 · validated: 6
 
 ---
 
@@ -55,15 +55,19 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler document-education
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
-**2026-09-18 (vr)** · facebook · naar Buffer gestuurd
+**2026-09-18 (vr)** · facebook · GEPUBLICEERD
 > Werk je met ZZPers, of ben je er zelf een? Dan is dit de toets die ertoe doet.
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
+[live](https://www.facebook.com/122112566624640791/posts/122114544602640791)
+verzonden 2026-09-18T07:05:15.593Z
 vertoningen 0 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
-**2026-09-18 (vr)** · instagram · naar Buffer gestuurd
+**2026-09-18 (vr)** · instagram · GEPUBLICEERD
 > Drie criteria bepalen of jouw opdracht een dienstverband is. Swipe voor alle drie.
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
+[live](https://www.instagram.com/p/Dda2kkQFu8o/)
+verzonden 2026-09-18T07:02:43.818Z (+3 min t.o.v. gepland)
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
 **2026-09-17 (do)** · linkedin · GEPUBLICEERD

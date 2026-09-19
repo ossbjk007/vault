@@ -28,7 +28,7 @@ Staan erin: `SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM`, `CONTACT_TO`. Het cont
 | `STRIPE_SECRET_KEY` | afrekenen | staat erin sinds 17 september: beperkte sleutel `back.ignition_webshop` uit het account van de band (`acct_1TQRMoPkTNAquQrF`), alleen Checkout Sessions schrijven. `/api/checkout` geeft nu 400 op een lege mand in plaats van 503 |
 | `RESEND_API_KEY` | contactformulier verstuurt echt | staat erin. De eerste sleutel is ingetrokken omdat niemand hem had; de tweede heeft Ali zelf geplakt, want het harnas blokkeert het uitlezen van sleutels |
 | `CONTACT_FROM` | afzender | staat op `Back Ignition <noreply@send.backignition.com>`, domein geverifieerd |
-| `CONTACT_TO` | ontvanger | staat op `backignition.site@outlook.com,aceberghem@gmail.com`, dus berichten komen bij de bandmailbox en bij Ali binnen. Vervangen door het adres van de band zodra [[Léon van Cappellen]] dat geeft |
+| `CONTACT_TO` | ontvanger | staat op `backignition.site@outlook.com,aceberghem@gmail.com`. Moet naar `wouter.merks@hotmail.com` (doorgegeven 18 september door Ali, alles moet daarheen); Vercel-formulier weigerde geautomatiseerd, dus met de hand |
 | `CONTACT_TO_BOOKING`, `CONTACT_TO_BAND`, `CONTACT_TO_ORDERS` | optioneel, per onderwerp splitsen | Léon |
 
 Zonder deze sleutels gaven `/api/checkout` en `/api/contact` netjes 503 en liegt de site niet. Dat is bewust.
@@ -46,9 +46,10 @@ Daarna, in deze volgorde:
 1. Controleren of het account live kan ontvangen: bankrekening gekoppeld, verificatie rond.
 2. ~~Een **beperkte** API-sleutel maken die alleen afrekensessies mag aanmaken.~~ Klaar 17 september, `back.ignition_webshop`. Stripe eiste daarbij een verificatielink naar de mailbox van Wouter, geopend in dezelfde browser als het dashboard; dat lukt alleen met de hand in Chrome, niet via het browserpaneel.
 3. ~~De webhook opnieuw bouwen~~ Gebouwd en live op 17 september, commit `feb5230`, `api/webhook.js`. Hij vertrouwt het event niet maar haalt de sessie zelf op bij Stripe, mailt de bestelling naar `CONTACT_TO_ORDERS` (anders `CONTACT_TO`) en de bevestiging naar de koper, idempotent per sessie. Bewijs: `POST /api/webhook` met een verzonnen sessie-id geeft `session lookup 404`, dus de beperkte sleutel mag sessies lezen. Endpoint in Stripe nagekeken en `STRIPE_WEBHOOK_SECRET` in Vercel gezet op 17 september; handtekeningcontrole bewezen actief (ongetekend → 400) na commit `6d56ac3`, die de body-parser van Vercel uitzet.
-4. Eerst in testmodus een bestelling er helemaal doorheen, dan pas live.
+4. ~~Eerst in testmodus een bestelling er helemaal doorheen, dan pas live.~~ Live testbestelling op 18 september 12:05 door [[Léon van Cappellen]]: € 12,00, webhook geleverd met 200 en beide mails verstuurd. Nog terug te storten.
+5. `CONTACT_TO_ORDERS` in Vercel op het adres van [[Wouter Merks]] zetten; nu gaan bestelmails alleen naar de outlook-bandmailbox en naar Ali. Facturen maakt Stripe sinds commit `a935ac4` zelf aan.
 
-Los daarvan nodig van Léon: artikelen met prijzen, maten, voorraad en verzendgebied, voor `src/data/products.json` (prijzen in centen). Zonder die artikelen staat de shop op "Merch coming soon", ook als Stripe gekoppeld is.
+~~Los daarvan nodig van Léon: artikelen met prijzen, maten, voorraad en verzendgebied.~~ Artikelen en verzendkosten binnen op 18 september en live, zie [[shop-artikelen]]. Foto's staan er sinds 18 september allemaal in. Nog nodig: de echte voorraad per artikel (staat nu op 10).
 
 Voorraad afboeken kan pas als er een echte opslag is; de artikelen staan nu in een bestand in de repo. Bij kleine oplages vinyl is dat het eerste wat misgaat, dus dat is een bewuste keuze om later te maken.
 

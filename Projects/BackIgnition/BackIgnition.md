@@ -27,7 +27,7 @@ Pushen vanaf de laptop gaat via een collaborator-invite van `ossbjk007` op de ba
 
 Openstaande punten staan in [[openstaand]]. Die lijst is leidend bij elke sessie over dit project.
 
-Site herbouwd volgens [[wensen-leon-2026-09-16]] en live op https://back-ignition-back-ignition.vercel.app. Vijf pagina's met hun eigen teksten, inlogknop weg, shop- en contactmachinerie werkend maar nog niet aangesloten. Domein gekoppeld op 17 september, Stripe-sleutel van de band staat sinds die avond in Vercel (`STRIPE_SECRET_KEY`, beperkt tot Checkout Sessions). Wacht nog op drie dingen van [[Léon van Cappellen]]: artikelen voor de shop, een mailadres voor het formulier, en bedrijfsgegevens voor de juridische pagina's.
+Site herbouwd volgens [[wensen-leon-2026-09-16]] en live op https://back-ignition-back-ignition.vercel.app. Sinds 18 september een one-pager zoals de oude site: embleem met vier knoppen, dan About, Jobs, Shop en Contact onder elkaar; de oude losse URL's sturen door naar het anker. Shop (Stripe) en contactformulier (Resend) zijn aangesloten. Domein gekoppeld op 17 september, Stripe-sleutel van de band staat sinds die avond in Vercel (`STRIPE_SECRET_KEY`, beperkt tot Checkout Sessions). Sinds 18 september staan de zes artikelen van de band in de shop, zie [[shop-artikelen]] voor prijzen, inkoop en marge; verzending € 8,50 NL. Alle veertig productfoto's staan er sinds die middag in. Wacht nog op: voorraadaantallen (staat op 10 per artikel), een mailadres voor het formulier, en bedrijfsgegevens voor de juridische pagina's van [[Léon van Cappellen]].
 
 
 Prototype live, klant akkoord. Bron stond tot 16 september alleen in een tijdelijke Claude-map en in de Vercel-deploy; nu veiliggesteld in de repo hierboven.
@@ -45,6 +45,10 @@ Prototype live, klant akkoord. Bron stond tot 16 september alleen in een tijdeli
 Binnen op 16 september, zie [[wensen-leon-2026-09-16]]. Plan van aanpak in [[plan-herbouw]], nog niet akkoord en nog niets gebouwd.
 
 ## Log
+
+- 2026-09-18, middag: zes artikelen van de band in de shop (commit `6acf74b`, live). Kaarten tonen nu de omschrijving, verzending is € 8,50 binnen Nederland zonder gratis-drempel, en Checkout krijgt naam, omschrijving, foto en sku per regel mee. Live getest met een echte sessie van € 31,00 (niet betaald). Inkoopprijzen en marges in [[shop-artikelen]]. Nog nodig van de band: foto's en voorraad. Later die middag alle foto's binnen en live (`02232d0`), alleen voorraad nog.
+- 2026-09-18, later: hele site weer één doorscrolbare pagina op verzoek van de band, commit `6133ca8`. Zie de dagnotitie.
+- 2026-09-18: landingspagina terug naar de oude opzet op verzoek van [[Ali Can]]: blauw embleem in het midden, vier knoppen, geen tekst. Commit `fedefdf`, live. Kopie van de oude site (vorige webdesigner, admin-paneel, lege shop) opgehaald van de oude server `83.86.15.124` via SNI; archive.org heeft er niets van.
 
 - 2026-09-17 avond: Stripe aangesloten. Beperkte sleutel `back.ignition_webshop` (alleen Checkout Sessions schrijven) uit het account van de band `acct_1TQRMoPkTNAquQrF`, door [[Ali Can]] zelf in Vercel gezet. `POST /api/checkout` geeft nu 400 op een lege mand in plaats van 503. Echte sessie nog niet getest, want `products.json` is leeg. Later die avond de webhook gebouwd en live gezet (`api/webhook.js`, commit `feb5230`): bestelmelding naar de band, bevestiging naar de koper. Volgende stap: webhook-secret in Vercel, dan artikelen en één echte testbestelling bij de band op 18 september (zie [[openstaand]] punt 3).
 
