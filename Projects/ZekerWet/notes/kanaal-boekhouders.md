@@ -41,7 +41,7 @@ Dat is dertig kantoren zonder te zoeken in Nijmegen, Wijchen, Grave, Cuijk, Hees
 
 ## Het warme contact in Rosmalen
 
-Het kantoor heet [[VPKL]]; op 19 september 2026 door [[Ali Can]] aangewezen als het eerste van de drie kantoren voor de diagnosegesprekken. [[Ali Can]] kent de eigenaren persoonlijk: hij heeft er een jaar gewerkt, kreeg kanker, zat anderhalf jaar in de ziektewet, en bij terugkeer bleek dat niet meer nodig. Hij kreeg een vertrekregeling. De relatie is nog vriendelijk en benaderbaar.
+Het kantoor heet [[VPKL]]; op 19 september 2026 door [[Ali Can]] aangewezen als het eerste van de drie kantoren voor de diagnosegesprekken. Contactpersoon is [[Patrick]], benaderd via WhatsApp op 21 september 2026, tekst en gespreksleidraad in [[gesprek-vpkl-patrick]]. [[Ali Can]] kent de eigenaren persoonlijk: hij heeft er een jaar gewerkt, kreeg kanker, zat anderhalf jaar in de ziektewet, en bij terugkeer bleek dat niet meer nodig. Hij kreeg een vertrekregeling. De relatie is nog vriendelijk en benaderbaar.
 
 Oordeel, eigen redenering: dit is het beste startpunt dat er is, maar niet voor een verkoopgesprek. Twee redenen. Een partnervoorstel als eerste contact plaatst hem in de vragende positie tegenover de mensen die hem hebben laten gaan, en dat maakt een nee waarschijnlijker en pijnlijker dan nodig. En het verspilt wat dit contact uniek maakt: hij heeft een jaar van binnen gezien hoe een boekhoudkantoor werkt en heeft toegang tot mensen die hem vakinhoudelijk serieus nemen.
 
@@ -66,6 +66,8 @@ Het beeld per beroepsgroep, gecontroleerd op 16 september 2026:
 Het onderscheid dat blijft staan is niet het bedrag maar de koppeling. Een kantoor dat [[ZekerWet]] voor zijn eigen praktijk gebruikt doet een normale softwareaankoop. Een kantoor dat een gratis account krijgt als beloning voor doorverwijzingen doet iets anders.
 
 De structuur die het minst afhangt van welke vereniging een kantoor toevallig heeft, is een opslag op de eigen factuur voor eigen werk. Dat is ook wat Firm24 bij ruim 1800 kantoren doet: de adviseur bepaalt zijn eigen tarief en zet zijn fee bovenop de factuur. Let op: OAMKB staat als referentie op de Firm24-partnerpagina en oamkb Oss staat in de lijst hierboven, dus dat kantoor kent zo'n programma al van binnenuit.
+
+De koude benadering van [[oamkb Oss]], [[Yurt Finance]] en [[Boekhouder Oss]] staat in [[outreach-kantoren-oss]].
 
 ## Wat nog niet is besloten
 

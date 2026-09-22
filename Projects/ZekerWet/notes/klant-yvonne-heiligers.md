@@ -2,6 +2,7 @@
 type: note
 date: 2026-09-14
 status: wacht op antwoord
+updated: 2026-09-21
 tags: [klant, business, support, escalatie]
 project: ZekerWet
 ---
@@ -49,3 +50,24 @@ Waarom de code-mail op 4 september niet aankwam is niet meer te zien: het Hobby-
 "Account niet geregistreerd" bij inloggen is te verklaren door de regel **User enumeration protection** (ook aan): die geeft bewust een vage melding zodat een aanvaller niet kan testen welke adressen bestaan. Voor een echte klant die net heeft betaald leest dat als "je account bestaat niet".
 
 Geen bug gevonden, geen wijziging gedaan. Device Trust uitzetten zou de drempel weghalen maar ook de bescherming tegen credential stuffing; dat is een keuze, geen fix.
+
+## Stand 21 september 2026, live uit Supabase
+
+De sectie "stand 14 september" hierboven is een momentopname van vóór haar sessie die middag en klopt niet meer op het punt AI-gebruik. Wat de database op 21 september laat zien (tijden omgerekend naar Nederlandse tijd):
+
+- 14 september 15:26 tot 15:50: **elf AI-reviews achter elkaar**, tien live en één cache-hit, 33.726 tokens. Ze plakte haar eigen bestaande documenten uit haar begeleidingspraktijk in de Copilot (intakeformulier volwassenen, intakeformulier kind/jongere, privacyverklaring, algemene voorwaarden met annuleringsregeling), zeven keer onder het type NDA, één keer als personeelslening, twee keer als verwerkersovereenkomst. Scores 7 en 8; de personeelslening-run gaf een 3 met "documenttype mismatch", want het was een intakeformulier.
+- 14 september 16:27: tweede document gegenereerd, **Verwerkingsregister (AVG art. 30)**, status completed.
+- Daarna niets meer. Laatste record 14 september 16:27. `aiUsageCount` staat op **10 van 10**: haar Business-quotum voor deze periode is vol tot de reset op 4 oktober 10:30 (gelijk met de incasso).
+
+Wat dat zegt: ze is niet weggebleven uit desinteresse, ze heeft in één uur de hele AI-review leeggetrokken en daarna een week niets. Twee mogelijke redenen, allebei niet bewezen: het quotum blokkeerde haar, of ze had gewoon klaar wat ze wilde nakijken. Het antwoord op de vijf vragen van 17 september ([[mail-yvonne-heiligers-vijf-vragen]]) is nog niet binnen. Het admin-digest van 16 tot 19 september ("0 requests") klopt met de database: haar reviews vielen op de 14e.
+
+De review-inhoud zelf is bruikbaar als klantcontext: zij werkt met gezondheidsgegevens van cliënten en kinderen, bewaartermijn één jaar na laatste contact, testimonials op basis van toestemming. Dat is het profiel van een coach of begeleider, niet van een SaaS-bedrijf, terwijl haar AV-sjabloon van 4 september "B2B/B2C/SaaS" was.
+
+## Kwaliteit van haar elf reviews, nagekeken 21 september 2026
+
+De inhoud van de bevindingen klopt juridisch waar het te controleren is: artikel 9 AVG voor gezondheidsgegevens, artikel 13 informatieplicht, 72 uur meldtermijn datalek (artikel 33), zeven jaar fiscale bewaarplicht, de WGBO-opmerking dat toestemming niet de enige grondslag hoort te zijn bij een behandelovereenkomst. Geen onzin gevonden. Wel twee structurele gebreken, allebei met bewijs uit de `Review`-tabel:
+
+1. **De limiet van 15.000 tekens (`src/config/ai.ts:33`) dwong haar om documenten in stukken te knippen, en de reviewer beoordeelt elk stuk alsof het het hele document is.** Drie reviews melden "het document breekt abrupt af". De helften spreken elkaar tegen: review 15:26 zegt dat "Aansprakelijkheid" en "Toepasselijk recht" ontbreken, review 15:30 (het vervolg van dezelfde AV) vindt "Artikel 15 – Aansprakelijkheid" en keurt het goed; 15:26 keurt "Artikel 9 – Herroepingsrecht" goed, 15:30 meldt het herroepingsrecht als ontbrekend. Bij de privacyverklaring hetzelfde: 15:31 mist "Rechten van betrokkenen" en "Datalekken", 15:37 en 15:43 vinden artikel 18 en 19 en keuren ze goed. Wat zij als klant zag: een lijst ontbrekende artikelen die in haar eigen document staan.
+2. **Te weinig bevindingen en een score die niets zegt.** Twee tot vier bevindingen per review, het merendeel "ok". Elke fragmentreview kreeg een 8, ook die met "breekt abrupt af". De prompt in `src/lib/gemini.ts` vraagt niet om een minimum, niet om de belangrijkste risico's eerst, en zegt niet dat de invoer een fragment kan zijn. Model is `gemini-flash-lite-latest` met 2048 uitvoertokens.
+
+Kleiner: "prüfen" (Duits) en "Hetdocument" in de tekst van twee bevindingen. Het documenttype negeerde ze grotendeels (zeven keer NDA voor AV en privacyverklaring); de reviewer paste zich stil aan en flagde de mismatch alleen bij het intakeformulier. De twee gegenereerde documenten (AV en Verwerkingsregister) zijn niet beoordeeld: `Document.content` bevat alleen formulierantwoorden, de tekst komt uit het sjabloon.
