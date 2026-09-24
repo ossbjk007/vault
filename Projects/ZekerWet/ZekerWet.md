@@ -24,6 +24,8 @@ SEO, status 14 september 2026: Google heeft drie pagina's van zekerwet.nl geïnd
 
 Groei, status 16 september 2026: naast organisch bereik en kennisbankartikelen ligt er nu een tweede spoor, boekhouders en administratiekantoren als distributiekanaal, uitgewerkt in [[kanaal-boekhouders]]. Aanleiding is de meting van 14 september: 70 bezoekers in 31 dagen en één betalende klant, te traag voor 15.000 euro per maand in augustus 2027. Dertig kantoren binnen circa 30 km van Oss zijn in kaart gebracht, dus het aantal kantoren is de beperking niet. [[Ali Can]] heeft een persoonlijk contact bij een kantoor in Rosmalen; advies is dat eerst als diagnosegesprek te gebruiken en niet als pitch. Volgende stap groei: aanbodvorm en meetmethode kiezen, uitzoeken of een verwijsvergoeding voor NBA- of RB-accountants is toegestaan, en het diagnosegesprek in Rosmalen aanvragen.
 
+AI Review V2, status 23 september 2026: fase 1 staat gecommit als `20f6891` en is gedeployd, maar de release wacht nog op één geslaagde productie-review. De twee mislukte runs van 22 september bleken niet aan de pijplijn te liggen maar aan de betaalstand bij Google: eerst gratis tier, daarna een lege prepaid wallet. Sinds de wallet gevuld is slaagden zes van zes lokale calls, ook op een document van 200.000 tekens (13,6 tot 14,8 seconden, 10,9 cent). In de werkboom staat sindsdien: een eigen fouttype voor een lege wallet met een alertmail, een per-poging-timeout van 30 seconden die nu wel een modelwissel kan starten, gecorrigeerde prijsconstanten en caps, en onvoorwaardelijke refunds. Volgorde van vrijgeven in [[ai-review-v2-releasechecklist-2026-09-23]].
+
 Abonnement-provisioning: [[subscription-provisioning]] legt uit waarom een betaald abonnement soms niet in de app landt.
 
 Eerste betalende Business-klant: [[klant-yvonne-heiligers]], sinds 4 september 2026. Haar supportmail van 4 september lag tien dagen onbeantwoord in de Gmail-box; op 14 september beantwoord. Daaruit twee structurele fixes op 14 september: supportinboxbewaking (`scripts/check-support-inbox.ps1`, taak `ZekerWet_SupportInbox`, Telegram bij nieuwe mail plus dagelijkse lijst van onbeantwoorde mails) en alle geplande taken omgezet naar draaien op accu, want `WebhookWatch` en `Reconcile` stonden stil zodra de laptop van de lader af was. Clerk nagekeken op 15 september: geen configuratiefout, de code komt van Device Trust en de e-mail-DNS staat geverifieerd; zij logt inmiddels gewoon in. Stripe-branding diezelfde nacht omgezet van Hoross naar ZekerWet (handelsnaam, afschrijvingstekst `ZEKERWET`, support-mail, website), want klanten zagen "Hoross" op hun afschrift en dat voedde de Murmurly-verwarring.
@@ -58,3 +60,15 @@ AI Review V2, fixes 21 september 2026 (nacht): blockers en HIGH-punten opgelost 
 AI Review V2, tweede review 21 september 2026: READY FOR COMMIT. Release-pad in [[ai-review-v2-fase1-review2-2026-09-21]]: commit per pad, kostenmeter ×1000, privacyverklaring, migratie, env-model, deploy, smoke.
 
 AI Review V2, release-fixes 21 september 2026: kostenmeter, privacytekst en modelconfig gedaan; 240 tests, build schoon. Werkboom klaar voor commit per pad; daarna migratie, deploy, smoke.
+
+AI Review V2, 22 september 2026: fase 1 gecommit als `20f6891` (37 bestanden), nog niet gepusht. Daarna migratie `20260921120000` via DIRECT_URL, deploy, live smoke.
+
+AI Review V2, 22 september 2026: migratie op productie toegepast en `20f6891` gepusht. Volgende stap: Vercel-deploy verifiëren en live smoke op productie.
+
+AI Review V2, 22 september 2026: productie-smoke mislukt op een modeltimeout, release BLOCKED. Diagnose en opties in [[ai-review-v2-timeout-diagnose-2026-09-22]]; eerst een tweede productie-run om uitschieter van structureel te scheiden.
+
+AI Review V2, 23 september 2026 (nacht): oorzaak van de 402 gevonden en opgelost. De Gemini-API betaalt uit een aparte prepaid wallet in AI Studio, niet uit Cloud Billing; wallet ingericht door `ossbjk`, die nu ook Billing Account Administrator is. Runbook in [[google-cloud-billing-zekerwet-2026-09-22]]. Volgende stap: hermeting, daarna releasebesluit.
+
+AI Review V2, 23 september 2026 00:24: hermeting 4 van 4 geslaagd op betaald tier (max 14,9 s). Blokkade door Google opgeheven. Volgende stap: 402-afhandeling bouwen, meting met een document van maximale lengte, dan release.
+
+AI Review V2, 23 september 2026 (nacht): `1ffce19` live op zekerwet.nl (402-afhandeling, wallet- en cap-alert, timeout 30 s met modelwissel, gecorrigeerde prijzen). Volgende stap: kostenmail ter controle van de caps, daarna één productie-review door [[Ali Can]] zelf.

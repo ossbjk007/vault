@@ -37,6 +37,30 @@ Vier punten die de verzonden versie hebben gevormd, na de eerste opzet van [[Ali
 
 Als hij vraagt wat het is: één zin, geen demo. "Ondernemers vullen een paar vragen in en krijgen er een document uit dat klopt voor Nederlands recht." Daarna terug naar zijn kant.
 
+
+## Antwoord van Patrick, 22 september 2026
+
+Ja. Het gesprek gaat door op kantoor en [[Rein]] sluit aan, dus het worden er twee in plaats van één. [[Patrick]] noemt volgende week als beste moment, vlak voor wat hij "de oktoberpiek" noemt. Woensdag en donderdagmiddag vallen af. Volgende week is maandag 28 september tot en met vrijdag 2 oktober, dus wat overblijft is maandag 28, dinsdag 29, donderdagochtend 1 oktober en vrijdag 2 oktober. [[Ali Can]] heeft zelf voorkeur voor vrijdag.
+
+Opvallend in zijn antwoord: hij wist al van [[ZekerWet]] door een LinkedIn-post van de vader van [[Ali Can]]. Het warme contact was dus al half voorbereid zonder dat iemand daarop had gestuurd.
+
+> [!warning] Twee dingen om vast te houden in het gesprek
+> Met twee man aan tafel is de verleiding groter om te gaan presenteren, zeker als ze vragen "laat eens zien". Het blijft een half uur en het blijft hún kant van tafel die aan het woord is; de eerste zes van de tien vragen gaan over hun werk. En de oktoberpiek betekent dat ze weinig tijd hebben: één concreet voorstel doen in plaats van een keuzemenu van vijf momenten.
+
+Let op voor het plan: [[execution-plan-14-dagen-2026-09-17]] loopt tot en met 30 september. Een gesprek op vrijdag 2 oktober valt buiten dat venster, dus de beslisboom van weekreview 2 mist dan de opbrengst van gesprek 1. Maandag 28 of dinsdag 29 houdt het binnen de veertien dagen. Dat is een afweging tussen een strak schema en een gesprek op het moment dat hén het beste uitkomt; het gesprek weegt zwaarder dan het venster.
+
+### Antwoord aan Patrick
+
+Op verzoek van [[Ali Can]] staat deze week er ook in. Dat is geen concessie maar winst: een gesprek op vrijdag 25 september valt nog binnen de veertien dagen van [[execution-plan-14-dagen-2026-09-17]], zodat weekreview 2 op 30 september de opbrengst van gesprek 1 meeneemt. Deze week blijven alleen donderdagochtend 24 en vrijdag 25 september over, want woensdag en donderdagmiddag vallen bij [[Patrick]] af.
+
+> Mooi, dank je Patrick. En leuk dat Rein aansluit.
+>
+> Vrijdag 2 oktober werkt voor mij het beste. Schikt 10:00 bij jullie op kantoor? Lukt die dag toch niet, dan kan ik ook maandag 28 of dinsdag 29 september.
+>
+> En mocht je deze week al ruimte hebben: vrijdag 25 september kan bij mij ook, ochtend of middag. Wat jou het beste uitkomt.
+>
+> Ik houd het op een half uur, dan hou je de rest van je dag vrij.
+
 ## De tien vragen in het gesprek
 
 Staan voluit in [[execution-plan-14-dagen-2026-09-17]] sectie 6. Volgorde is niet vrijblijvend: de eerste zes gaan over hún werk, pas daarna komt [[ZekerWet]] in beeld.
