@@ -359,3 +359,31 @@ Maar de constante alleen doet niets, en dat is de belangrijkste vondst van deze 
 De prijs hiervan staat al beschreven onder optie B: Google kan de afgebroken generatie afmaken en factureren zonder dat wij het zien, dus één review kan in het ergste geval twee generaties kosten. Met een gemeten maximum van 14,9 seconden tegen een grens van 30 is dat pad zeldzaam.
 
 Vier tests erbij in `review-v2.test.ts`, samen 64 in dat bestand: dat 30 seconden binnen het budget van 50 wél ruimte laat voor een tweede model en 40 seconden niet (de rekensom staat nu in een test, niet in een comment), dat de keten na een timeout naar het volgende model gaat, dat een te klein restbudget nog steeds een `AiTimeoutError` oplevert, en dat een afgegane signal de run beëindigt. Volledige suite 275 groen en 3 overgeslagen, `tsc` schoon.
+
+
+## Maximale kosten per klant per maand (24 september, herberekend)
+
+Vraag van [[Ali Can]]: wat kan één klant mij maximaal kosten per maand. Berekend met `priceForMicros` uit de cost-meter zelf, dus met de prijzen die productie ook rekent, en met de limieten uit `AI_LIMITS` en `AI_TOKEN_BUDGETS`.
+
+Twee soorten "duurste review", want uitvoertokens kosten zes keer zoveel als invoertokens (9,00 tegen 1,50 per miljoen):
+
+| Soort | Invoer | Uitvoer | Kosten | Tokens |
+|---|---|---|---|---|
+| Maximaal document | 53.499 (gemeten op 199.998 tekens) | 16.384 (de uitvoercap) | **22,77 cent** | 69.883 |
+| Klein document, volle uitvoer | circa 1.600 | 16.384 | **14,99 cent** | 17.984 |
+
+Welke van de twee het duurst uitpakt hangt af van welke limiet knelt:
+
+| Plan | Reviews per maand | Tokenbudget | Bindende limiet | Maximum |
+|---|---|---|---|---|
+| Essential | 1 | 150.000 | aantal reviews | **23 cent** |
+| Business | 10 | 1.000.000 | aantal reviews | **2,28 euro** |
+| Enterprise | onbeperkt (999.999) | 5.000.000 | tokenbudget | **41,66 euro** |
+
+**Enterprise is de uitschieter en dat was eerder onderschat.** De negende sessie noteerde 16,68 euro, berekend met maximale documenten. Maar bij Enterprise knelt het tokenbudget en niet het aantal reviews, dus het duurste gedrag is niet "grote documenten" maar "veel kleine documenten die de uitvoercap volledig opmaken": 278 reviews van 17.984 tokens in plaats van 71 van 69.883. Dat is 2,5 keer zoveel als gedacht. Tegenover 200 euro abonnementsprijs is het nog steeds 21 procent, maar het is het vermelden waard omdat het de enige plan-grens is die niet door het aantal reviews wordt vastgehouden.
+
+**In de praktijk ligt het ver hieronder.** Gemeten kosten: 4,1 tot 4,9 cent voor een gewoon document van 42.000 tekens en 10,8 cent voor een document op de invoergrens, omdat het model in werkelijkheid circa 3.100 uitvoertokens gebruikt en niet 16.384. De cap wordt alleen volgemaakt door een model dat op hol slaat of door opzet.
+
+**En er staat een tweede slot.** De globale caps gelden voor alle klanten samen: in productie 334 eurocent per dag en 445 eurocent per maand. Geen enkele klant kan daar doorheen, ook een Enterprise-klant niet. Het antwoord op "wat kan één klant mij maximaal kosten" is daarom in de praktijk: **nooit meer dan wat er die maand nog onder de 4,45 euro zit**. De plan-limieten hierboven zijn wat het abonnement toestaat, de caps zijn wat de rekening toestaat, en de laagste van de twee wint.
+
+Let op bij lezen van code: `dailyCapMicros()` en `monthlyCapMicros()` geven lokaal 0,50 en 5,00 euro terug, want dat zijn de defaults in `cost-meter.ts`. Productie draait op de Vercel-variabelen, 334 en 445.

@@ -101,3 +101,27 @@ De zin over vragen die binnen hun eigen muren opgelost kunnen worden doet het we
 De tien vragen voor in het gesprek staan in [[gesprek-vpkl-patrick]] en voluit in [[execution-plan-14-dagen-2026-09-17]] sectie 6. Dezelfde regel geldt: geen prijs, geen demo, en geen vergoeding per doorverwijzing ter sprake brengen zolang RB artikel 15 niet is nagekeken voor een concrete constructie.
 
 Gerelateerd: [[kanaal-boekhouders]], [[gesprek-vpkl-patrick]], [[icp]]
+
+## Mail aan Jack van de Coolwijk, 24 september 2026
+
+Tweede kanaal na de LinkedIn-uitnodiging van 21 september, die na drie dagen niet was geaccepteerd. Op verzoek van [[Ali Can]] in de toon van het bericht aan [[Patrick]] ([[gesprek-vpkl-patrick]]): wat Jack er zelf aan heeft staat erin, en LinkedIn wordt luchtig genoemd, zonder verwijt. Aan `jack.vandecoolwijk@oamkb.nl`, vanaf `info@zekerwet.nl` als Ali Can | ZekerWet.
+
+Onderwerp: Even sparren over de juridische vragen van jullie klanten
+
+> Hallo Jack,
+>
+> Eerder deze week stuurde ik je een connectieverzoek op LinkedIn, maar ik kan me voorstellen dat zoiets tussen alle andere verzoeken verdwijnt. Daarom probeer ik het ook even zo.
+>
+> Ik ben Ali Can, ondernemer uit Oss. Ik bouw ZekerWet, software waarmee ondernemers (zzp tot mkb) juridische documenten kunnen opstellen en laten beoordelen op fouten en tekortkomingen: algemene voorwaarden, privacyverklaringen, overeenkomsten. Het draait inmiddels met echte klanten.
+>
+> Ik wil je er niks over verkopen, maar ik zou graag een half uur met je sparren. Jullie zien van dichtbij met welke juridische vragen ondernemers bij hun boekhouder aankloppen, en ik ken die kant alleen vanaf mijn eigen scherm. Ik ben benieuwd wat voor vragen dat zijn, wat jullie er zelf mee doen en welke kant jullie ze dan op sturen.
+>
+> Andersom kan ik je vertellen waar het in de documenten van ondernemers het vaakst misgaat. Bij privacyverklaringen zijn dat bijvoorbeeld de bewaartermijnen en de grondslag voor de financiële administratie, dingen die ook voor jullie klanten spelen. Wie weet steek ik er wat van op, en jij ook.
+>
+> Heb je volgende week een half uur? Bellen of ik kom langs op kantoor, wat jou het beste uitkomt.
+>
+> Groeten,
+> Ali Can
+> ZekerWet
+
+Verstuurd door [[Ali Can]] op 24 september 2026. Geen reactie vóór donderdag 1 oktober: dan één keer bellen naar het kantoor in Oss en naar Jack vragen.

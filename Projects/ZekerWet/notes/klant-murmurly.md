@@ -32,4 +32,16 @@ Haar klacht gaat verder dan het geld. Volgens haar bleef de subscription in het 
 
 Dat drie klantrecords voor twee mensen op één pas zijn ontstaan is een tweede signaal: iemand probeerde het opnieuw en opnieuw omdat het niet werkte, en elke poging maakte een nieuw betalend abonnement aan.
 
+## Wie Murmurly is (onderzocht 24 september 2026 op murmurly.io)
+
+[[Murmurly]] is een AI-startup uit Amsterdam, nog vóór de lancering: de site heeft een wachtlijst, "Request Early Access" en "Schedule a demo". Het product is een operationeel platform voor zakelijke bijeenkomsten waar veel van afhangt: executive briefings, customer advisory boards, leadership retreats en investor summits. Het brengt agenda's, deelnemers, content en logistiek samen, met een AI-assistent die "Murble" heet. Hosting in de EU of de VS; op de contactpagina bieden ze klanten een security review aan, met onder meer subprocessors en datastromen.
+
+Oprichters volgens de About-pagina: **Sid van Wijk**, co-founder product strategy en experience design, met tien jaar ervaring in executive briefings en advisory boards; en **Chris Visser**, co-founder engineering. Sid is dus medeoprichter, geen medewerker. Algemeen adres `hello@murmurly.io`. Het domein draait op Google Workspace (MX `smtp.google.com`). Ananda heeft dezelfde achternaam als Chris Visser; of er een verband is, is niet bekend.
+
+Wat dit voor [[ZekerWet]] betekent (eigen redenering): een startup die richting enterprise-klanten lanceert, met een AI-chat die berichten van bezoekers verwerkt en klanten die om subprocessors vragen, heeft precies de documenten nodig die ZekerWet maakt en nakijkt: verwerkersovereenkomst, privacyverklaring, algemene voorwaarden. Sid is daarmee niet alleen een terug te winnen klant, hij past ook in het profiel.
+
+## Terugwinnen, 24 september 2026
+
+Sid belde eind augustus met [[Ali Can]]; afgesproken was dat Ali contact zou opnemen zodra het werkte. Terugwinmail met eerste maand gratis, ook voor [[Ananda-Visser]]: [[mail-sid-murmurly-terugwin-2026-09-24]]. Onderzoek naar Sid en wat Murmurly juridisch nodig heeft: [[sid-murmurly-benaderingsstrategie-2026-09-24]].
+
 Gerelateerd: [[ZekerWet]].

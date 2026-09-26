@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-22
+date: 2026-09-24
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-22T23:00:10.532Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-24T19:00:13.103Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -16,7 +16,7 @@ project: ZekerWet
 
 Contentlogboek van [[ZekerWet]]. 63 items.
 
-wacht op handmatige bevestiging: 2 · GEANNULEERD: 2 · GEPUBLICEERD: 56 · naar Buffer gestuurd: 3
+wacht op handmatige bevestiging: 1 · GEANNULEERD: 2 · GEPUBLICEERD: 58 · naar Buffer gestuurd: 2
 
 ---
 
@@ -36,15 +36,19 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
-**2026-09-24 (do)** · linkedin · naar Buffer gestuurd
+**2026-09-24 (do)** · linkedin · GEPUBLICEERD
 > De Belastingdienst vraagt niet om een goed contract. Ze vraagt je om het regelmatig opnieu…
 campagne ai-review · pijler ai-review
-bereik 0 · vertoningen 0 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+[live](https://www.linkedin.com/feed/update/urn:li:share:7508763411162263552)
+verzonden 2026-09-24T05:45:03.794Z
+bereik 1 · vertoningen 1 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
-**2026-09-23 (wo)** · x · wacht op handmatige bevestiging
+**2026-09-23 (wo)** · x · GEPUBLICEERD
 > Een goedgekeurde modelovereenkomst van vóór 6 september 2024 blijft bruikbaar tot en met 3…
 campagne wetdba-handhaving-2026 · pijler legal-pain
+[live](https://x.com/ZekerWet/status/2103090165753503837)
+verzonden 2026-09-24T11:57:30.270Z (+1753 min t.o.v. gepland)
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7. X: handmatig plaatsen en bevestigen met mkt:confirm._
 
 **2026-09-22 (di)** · linkedin · GEPUBLICEERD
@@ -52,7 +56,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler legal-pain
 [live](https://www.linkedin.com/feed/update/urn:li:share:7508038633019412480)
 verzonden 2026-09-22T05:45:03.219Z
-bereik 123 · vertoningen 165 · reacties 1 · comments 0 · gedeeld 0 · engagement 3.6%
+bereik 237 · vertoningen 298 · reacties 1 · comments 0 · gedeeld 0 · engagement 2.0%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-18 (vr)** · x · GEPUBLICEERD
@@ -115,7 +119,7 @@ _Backfilled. Created before the validation gate existed._
 > Je contract laten nakijken kost je geen duizenden euro's meer.
 [live](https://www.linkedin.com/feed/update/urn:li:share:7503689980549201920)
 verzonden 2026-09-10T05:45:03.479Z
-bereik 77 · vertoningen 115 · reacties 1 · comments 0 · gedeeld 0 · engagement 6.1%
+bereik 78 · vertoningen 116 · reacties 1 · comments 0 · gedeeld 0 · engagement 6.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-09-09 (wo)** · linkedin · GEPUBLICEERD
@@ -175,7 +179,7 @@ _Backfilled. Created before the validation gate existed._
 > Een vaststellingsovereenkomst opstellen kost gemiddeld 3 tot 6 uur advocaattijd. Dat is ee…
 [live](https://www.linkedin.com/feed/update/urn:li:share:7498250411305328640)
 verzonden 2026-08-26T05:30:09.033Z
-bereik 6 · vertoningen 18 · reacties 1 · comments 0 · gedeeld 0 · engagement 11.1%
+bereik 7 · vertoningen 20 · reacties 1 · comments 0 · gedeeld 0 · engagement 10.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-08-25 (di)** · facebook · GEPUBLICEERD

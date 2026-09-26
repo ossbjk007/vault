@@ -8,6 +8,8 @@ project: ZekerWet
 
 Gesprek 1 van de drie diagnosegesprekken uit [[execution-plan-14-dagen-2026-09-17]] sectie 6, met [[Patrick]] van [[VPKL]] in Rosmalen. [[Ali Can]] heeft er een jaar gewerkt, zie [[kanaal-boekhouders]] voor waarom dit het warme contact is en waarom het géén verkoopgesprek wordt.
 
+**Bevestigd op 24 september 2026: vrijdag 2 oktober 2026 om 11:00, op kantoor bij [[VPKL]] in Rosmalen.** [[Rein]] sluit aan.
+
 > [!warning] Wat we níet voorstellen
 > Geen partnerprogramma, geen demo, geen prijs, geen vergoeding per doorverwijzing. Dat laatste is ook juridisch: artikel 15 van het Reglement Beroepsuitoefening van het Register Belastingadviseurs verbiedt vergoedingen in enige vorm voor het bezorgen van opdrachten, kortingen en betalingen in natura meegerekend. Een kantoorlicentie bespreken mag wel, want dat is een aankoop. Maar niet nu.
 

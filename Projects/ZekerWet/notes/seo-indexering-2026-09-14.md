@@ -117,3 +117,19 @@ Commit `1915b06`: `htmlLimitedBots` in `next.config.mjs` op Next's standaardlijs
 In Search Console daarna: nieuwe validatie gestart op 21 september (status "In behandeling 1, Mislukt 0") en indexering van de homepage opnieuw aangevraagd, bevestigd met "URL is toegevoegd aan een prioriteitscrawlwachtrij". De inspectie toont nog de crawl van 18 september met "Door gebruiker aangegeven canonieke URL: Geen"; dat verandert pas bij de volgende crawl. Meetmoment blijft 28 september.
 
 Kanttekening bij dit alles: Google heeft de crawl van 18 september gedaan vóórdat deze fix bestond, dus of de canonical nu wél wordt opgepikt is pas bewezen als de inspectie na de volgende crawl "https://zekerwet.nl/" bij "Door gebruiker aangegeven canonieke URL" toont. De diagnose (metadata in de body) is hard gemeten; dat dit de enige reden was voor Google's keuze is aannemelijk maar nog niet bewezen.
+
+## 24 september 2026: URL-inspectie na de fix van 21 september
+
+**Server-kant, gemeten met `curl` als Googlebot smartphone:** `https://zekerwet.nl/` geeft 200. `https://www.zekerwet.nl/`, `https://www.zekerwet.nl/privacy` en `http://zekerwet.nl/` geven 308 naar de apex. `</head>` staat op byte 3.952 en daarbinnen staan title, description, canonical (`https://zekerwet.nl`) en de verificatietag. `og:url` is de apex. Het woord `www.zekerwet.nl` komt nul keer voor in de HTML en nul keer in de sitemap (249 URL's, allemaal apex). robots.txt laat `/` toe. Aan onze kant is er niets meer te repareren.
+
+**Search Console, URL-inspectie van `https://zekerwet.nl/`:** laatste crawl 21 september 12:30:09, Googlebot smartphone, ophalen geslaagd, crawlen en indexeren toegestaan. **Door gebruiker aangegeven canonieke URL: `https://zekerwet.nl/`.** Op 21 september stond hier nog "Geen", dus de fix `1915b06` is door Google opgepikt. **Door Google geselecteerde canonieke URL: nog steeds `https://www.zekerwet.nl/`.** Status: "Dubbele pagina, Google heeft een andere canonieke pagina gekozen dan de gebruiker". Verwijzende pagina's in Google's geheugen: `https://www.zekerwet.nl/`, `http://zekerwet.nl/`, `https://www.zekerwet.nl/privacy`.
+
+**Rapport Pagina's:** 40 geïndexeerd, 210 niet. Het oude probleem "zonder door de gebruiker geselecteerde canonieke versie" heeft validatie Gestart (1). Het nieuwe probleem "Google heeft een andere canonieke pagina gekozen" heeft 1 pagina, validatie Niet gestart. Daarnaast 208 "Gevonden, momenteel niet geïndexeerd", los van dit probleem.
+
+**Oordeel:** het probleem is verschoven van "wij geven geen canonical" naar "Google heeft zijn oude keuze nog niet herzien". Google koos www in de tijd van de 307-redirect, vóór 17 september. Om die keuze te herzien moet Google `www.zekerwet.nl` opnieuw crawlen en de 308 zien. Dat gebeurt vanzelf, maar niet op een vast moment. Nogmaals indexering aanvragen voor de apex helpt niet: de apex is net gecrawld en goed bevonden.
+
+**Enige hefboom om het te versnellen (eigen redenering):** een Domein-property `zekerwet.nl` in Search Console, geverifieerd met een TXT-record bij TransIP. Daarmee kun je `https://www.zekerwet.nl/` zelf inspecteren en een crawl aanvragen, zodat Google de 308 ziet. Nu kan dat niet, want de URL-voorvoegsel-property dekt alleen `https://zekerwet.nl/`.
+
+Volgend meetmoment: 1 oktober 2026.
+
+Besluit [[Ali Can]] 24 september: eerst wachten (optie A). Domein-property via TXT bij TransIP pas als de inspectie van 1 oktober nog `www` toont. Let dan op: nieuw TXT-record toevoegen, het bestaande SPF-record `v=spf1 include:spf.improvmx.com ~all` niet aanraken.
