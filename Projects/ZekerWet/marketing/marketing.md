@@ -24,6 +24,7 @@ handmatig kanaal mee in dezelfde validatiepoort, zie [[cadence]].
 
 ## Bestanden in deze map
 
+- [[groeiplan-social-2026-09-26]]: herziening social sinds 26 september: Reels, nieuwe vormgeving, Meta-publisher en ads. Actief besluitdocument.
 - [[cadence]]: weekritme, kanalen, hoeveel tijd het kost. Vervangt het oude schema.
 - [[brand-voice]]: merkregels, do's en don'ts, zinsritme. Blijft leidend voor mensen.
 - [[copy-library]]: taglines, value props, CTA's, hashtags, prijzen.

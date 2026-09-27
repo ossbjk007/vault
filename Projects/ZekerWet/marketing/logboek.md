@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-24
+date: 2026-09-26
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-24T19:00:13.103Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-26T19:00:09.453Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -16,7 +16,7 @@ project: ZekerWet
 
 Contentlogboek van [[ZekerWet]]. 63 items.
 
-wacht op handmatige bevestiging: 1 · GEANNULEERD: 2 · GEPUBLICEERD: 58 · naar Buffer gestuurd: 2
+wacht op handmatige bevestiging: 1 · GEANNULEERD: 2 · GEPUBLICEERD: 60
 
 ---
 
@@ -25,15 +25,20 @@ wacht op handmatige bevestiging: 1 · GEANNULEERD: 2 · GEPUBLICEERD: 58 · naar
 campagne wetdba-handhaving-2026 · pijler legal-pain
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7. X: handmatig plaatsen en bevestigen met mkt:confirm._
 
-**2026-09-25 (vr)** · facebook · naar Buffer gestuurd
+**2026-09-25 (vr)** · facebook · GEPUBLICEERD
 > Werk je met ZZPers op een modelovereenkomst? Dan zijn dit de drie data die je moet kennen.
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
-vertoningen 0 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+[live](https://www.facebook.com/122112566624640791/posts/122115220436640791)
+verzonden 2026-09-25T07:05:37.417Z
+vertoningen 1 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
-**2026-09-25 (vr)** · instagram · naar Buffer gestuurd
+**2026-09-25 (vr)** · instagram · GEPUBLICEERD
 > Je modelovereenkomst is geen vrijbrief meer. Swipe voor de drie data die dat bepalen.
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
+[live](https://www.instagram.com/p/Dds4HXJFQqF/)
+verzonden 2026-09-25T07:02:25.962Z (+2 min t.o.v. gepland)
+bereik 6 · vertoningen 13 · reacties 1 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 16.7%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-24 (do)** · linkedin · GEPUBLICEERD
@@ -41,7 +46,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne ai-review · pijler ai-review
 [live](https://www.linkedin.com/feed/update/urn:li:share:7508763411162263552)
 verzonden 2026-09-24T05:45:03.794Z
-bereik 1 · vertoningen 1 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 4 · vertoningen 8 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-23 (wo)** · x · GEPUBLICEERD
@@ -56,7 +61,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler legal-pain
 [live](https://www.linkedin.com/feed/update/urn:li:share:7508038633019412480)
 verzonden 2026-09-22T05:45:03.219Z
-bereik 237 · vertoningen 298 · reacties 1 · comments 0 · gedeeld 0 · engagement 2.0%
+bereik 248 · vertoningen 315 · reacties 1 · comments 0 · gedeeld 0 · engagement 1.9%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-18 (vr)** · x · GEPUBLICEERD
@@ -71,7 +76,7 @@ _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel vo
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
 [live](https://www.facebook.com/122112566624640791/posts/122114544602640791)
 verzonden 2026-09-18T07:05:15.593Z
-vertoningen 0 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+vertoningen 3 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
 **2026-09-18 (vr)** · instagram · GEPUBLICEERD
@@ -134,7 +139,7 @@ _Backfilled. Created before the validation gate existed._
 7 slides
 [live](https://www.facebook.com/122112566624640791/posts/122113758242640791)
 verzonden 2026-09-08T09:01:39.737Z (+2 min t.o.v. gepland)
-vertoningen 1 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+vertoningen 3 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Backfilled. Created before the validation gate existed._
 
 **2026-09-08 (di)** · instagram · GEPUBLICEERD

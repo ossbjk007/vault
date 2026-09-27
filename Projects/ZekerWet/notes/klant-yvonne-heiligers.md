@@ -75,3 +75,11 @@ Kleiner: "prüfen" (Duits) en "Hetdocument" in de tekst van twee bevindingen. He
 ## Terugwinnen na V2 (23 september 2026, voorstel)
 
 Haar quotum staat op 10 van 10 tot 4 oktober, en een deel daarvan ging op aan het knippen dat V1 afdwong (elf reviews voor een handvol documenten). Een mail over de verbeterde review zonder dat quotum terug te zetten stuurt haar naar een geblokkeerde knop. Voorstel: pas als een review op productie met V2 aantoonbaar goed is, haar `aiUsageCount` op 0 zetten en haar één mail sturen volgens regel 16, 17 en 21: eerst de inbox nakijken, dan vanuit het account ("op 14 september zijn in je account elf reviews gedaan, de documenten moesten toen in stukken"), wat er veranderd is, en dat haar tien reviews voor deze periode opnieuw beschikbaar zijn. Uiterlijk een paar dagen vóór de incasso van 4 oktober.
+
+## Stand 26 september 2026 (database)
+
+Geen activiteit in de app sinds 14 september: laatste review 14 september 13:50, laatste document 14 september 14:27. Totaal 2 documenten en 11 reviews, `aiUsageCount` 10. Het abonnement is actief en de periode loopt tot 4 oktober 10:30. Of er een opzegging aan het eind van de periode klaarstaat, is niet in de database te zien, alleen in Stripe. Inloggen zonder iets aan te maken is ook niet in de database te zien, alleen in Clerk.
+
+Mails van 14 en 17 september onbeantwoord (nagekeken 26 september). Laatste mail als concept, zonder vraag: [[mail-yvonne-heiligers-terugwin]]. Daarna niets meer tot zij reageert.
+
+Teller gereset op 26 september 2026 op verzoek van [[Ali Can]]: `aiUsageCount` van 10 naar 0 en `aiTokensUsed` van 33.726 naar 0, via een SQL-update die alleen gold als de oude waarden nog klopten. De resetdatum van de periode (4 oktober 10:30) en het plan (`price_business`) zijn ongewijzigd.

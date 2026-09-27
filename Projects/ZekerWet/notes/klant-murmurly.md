@@ -45,3 +45,5 @@ Wat dit voor [[ZekerWet]] betekent (eigen redenering): een startup die richting 
 Sid belde eind augustus met [[Ali Can]]; afgesproken was dat Ali contact zou opnemen zodra het werkte. Terugwinmail met eerste maand gratis, ook voor [[Ananda-Visser]]: [[mail-sid-murmurly-terugwin-2026-09-24]]. Onderzoek naar Sid en wat Murmurly juridisch nodig heeft: [[sid-murmurly-benaderingsstrategie-2026-09-24]].
 
 Gerelateerd: [[ZekerWet]].
+
+Sid antwoordde op 24 september om 21:18: hij stuurt de mail door naar [[Ananda-Visser]] en zijn technische medeoprichter, en wil koffie drinken; hij mailt zelf om te plannen. De kortingscode pas bouwen als ze echt willen starten. [[Ali Can]] antwoordde op 26 september kort: bedankt, en hij komt graag naar Amsterdam.
