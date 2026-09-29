@@ -125,3 +125,9 @@ Onderwerp: Even sparren over de juridische vragen van jullie klanten
 > ZekerWet
 
 Verstuurd door [[Ali Can]] op 24 september 2026. Geen reactie vóór donderdag 1 oktober: dan één keer bellen naar het kantoor in Oss en naar Jack vragen.
+
+## Opvolging 28 september 2026
+
+[[Yurt Finance]] gebeld op 06-40720282: niet opgenomen, voicemail ingesproken met een korte verwijzing naar de mail van 21 september. Geen tweede mail sturen; nog één keer bellen als er vóór donderdag 1 oktober niets terugkomt, daarna afvallen.
+
+Nummers [[oamkb Oss]], opgezocht op 28 september 2026: kantoor 06-53375609 (op oamkb.nl bij Sjoerd Lemstra), Jack van de Coolwijk rechtstreeks 06-12963816 (ledenlijst TIBO, tibonet.nl).

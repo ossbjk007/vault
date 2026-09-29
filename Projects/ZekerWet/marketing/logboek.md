@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-27
+date: 2026-09-28
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-27T20:00:04.481Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-28T16:00:06.624Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -30,7 +30,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
 [live](https://www.facebook.com/122112566624640791/posts/122115220436640791)
 verzonden 2026-09-25T07:05:37.417Z
-vertoningen 1 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+vertoningen 2 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-25 (vr)** · instagram · GEPUBLICEERD
@@ -61,7 +61,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler legal-pain
 [live](https://www.linkedin.com/feed/update/urn:li:share:7508038633019412480)
 verzonden 2026-09-22T05:45:03.219Z
-bereik 251 · vertoningen 321 · reacties 1 · comments 0 · gedeeld 0 · engagement 1.9%
+bereik 252 · vertoningen 322 · reacties 1 · comments 0 · gedeeld 0 · engagement 1.9%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-18 (vr)** · x · GEPUBLICEERD
@@ -76,7 +76,7 @@ _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel vo
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
 [live](https://www.facebook.com/122112566624640791/posts/122114544602640791)
 verzonden 2026-09-18T07:05:15.593Z
-vertoningen 3 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+vertoningen 4 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
 **2026-09-18 (vr)** · instagram · GEPUBLICEERD

@@ -33,7 +33,7 @@ Kort. Kort. Iets langer. Kort. Maximaal 20 woorden per zin op social, liever 12.
 
 Voor ZZP-content: noem Wet DBA als context. Voor AVG-content: citeer het exacte artikel (Art. 30 verwerkingsregister, Art. 33 datalekmelding). Aan het einde altijd een CTA: gratis trial of kennisbank-link. Nooit een lege post zonder hook.
 
-Long-form disclaimer (verplicht bij posts langer dan 5 tweets of een blog): "Laat juridisch belangrijke documenten altijd nakijken door een jurist voor ondertekening."
+Geen disclaimer in de copy. Sinds 27 september 2026 (vault-regel 27) nooit "laat nakijken door een jurist" of "klaar voor jurist-review", en ook geen garantie ("juridisch correct", "AVG-proof", "waterdicht"). Wel feitelijk: "opgesteld volgens de Nederlandse wet", wat het document doet, welke wetsartikelen erin zitten. De bescherming staat in footer, voorwaarden (art. 11) en /disclaimer. De contentpoort blokkeert de oude zinnen (`B6_HEDGE_OR_GUARANTEE`).
 
 ## Do's
 

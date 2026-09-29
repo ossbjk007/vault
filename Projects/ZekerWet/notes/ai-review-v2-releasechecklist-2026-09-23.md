@@ -19,7 +19,7 @@ Settings, Environment Variables. Alle drie op **Production en Preview**. Ze gaan
 |---|---|---|
 | `AI_DAILY_CAP_EUR_CENTS` | `334` | Eén Business-klant mag zijn hele maandtegoed (2,23 euro) op één dag opmaken zonder geweigerd te worden. Stond op een oude waarde die niet leesbaar is, want het type is `sensitive` |
 | `AI_MONTHLY_CAP_EUR_CENTS` | `445` | Twee keer het maandrecht van het huidige bestand. De code-default is inmiddels ook 445, maar de variabele in Vercel wint, dus hij moet expliciet goed staan |
-| `AI_HEALTH_DIGEST_TO` | het eigen adres van [[Ali Can]] | Kostendigest én de twee alerts (cap en wallet) gaan hierheen in plaats van naar `support@zekerwet.nl`, waar ze nu de supportinbox vervuilen |
+| `AI_HEALTH_DIGEST_TO` | het eigen adres van [[Ali Can]], de `ossbjk`-Gmail (bevestigd 28 september 2026) | Kostendigest én de twee alerts (cap en wallet) gaan hierheen in plaats van naar `support@zekerwet.nl`, waar ze nu de supportinbox vervuilen |
 
 Niet aanpassen: `GOOGLE_AI_API_KEY` en `AI_HEALTH_CRON_SECRET` staan er al en blijven zoals ze zijn. `AI_REVIEW_MODEL`, `AI_REVIEW_FALLBACK_MODELS`, `AI_STRUCTURE_MODEL` en alle `AI_PRICE_*` staan er bewust niet: daarvoor gelden de code-defaults, en die zijn sinds 22 september gecorrigeerd.
 

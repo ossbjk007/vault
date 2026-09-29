@@ -30,7 +30,7 @@ Bouwstenen voor alle content van [[ZekerWet]]. Niet verzinnen, hier uit putten.
 - Primaire CTA: Start gratis op zekerwet.nl
 - Secundaire CTA: Lees meer in onze gratis kennisbank: zekerwet.nl/kennisbank
 - Document-specifieke CTA: Genereer een [type] op zekerwet.nl/documenten/[slug]
-- Verplichte disclaimer-CTA onder long-form: ⚖️ Concept klaar in 2 min. Laat altijd nakijken door een jurist voor ondertekening.
+- Afsluiter onder long-form: ⚖️ Opgesteld volgens de Nederlandse wet. (De oude disclaimer met "laat nakijken door een jurist" is sinds 27 september 2026 verboden, vault-regel 27.)
 
 ## Hashtags
 
