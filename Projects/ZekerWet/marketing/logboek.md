@@ -1,13 +1,13 @@
 ---
 type: notes
-date: 2026-09-28
+date: 2026-09-30
 status: gegenereerd
 tags: [logboek, content, ZekerWet]
 project: ZekerWet
 ---
 
 > [!warning] Dit bestand wordt gegenereerd. Niet met de hand bewerken.
-> Gegenereerd door de reconciler op 2026-09-28T16:00:06.624Z, uit wat Buffer daadwerkelijk bevestigd heeft.
+> Gegenereerd door de reconciler op 2026-09-30T20:00:05.633Z, uit wat Buffer daadwerkelijk bevestigd heeft.
 > Wat je hier zelf intypt is bij de volgende run weg. Eigen aantekeningen horen in het veld
 > `notes` op het contentobject in `marketing/content/`; die worden hieronder meegenomen.
 >
@@ -38,7 +38,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler document-education · 7 slides
 [live](https://www.instagram.com/p/Dds4HXJFQqF/)
 verzonden 2026-09-25T07:02:25.962Z (+2 min t.o.v. gepland)
-bereik 6 · vertoningen 14 · reacties 1 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 16.7%
+bereik 6 · vertoningen 15 · reacties 1 · comments 0 · gedeeld 0 · opgeslagen 0 · engagement 16.7%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-24 (do)** · linkedin · GEPUBLICEERD
@@ -46,7 +46,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne ai-review · pijler ai-review
 [live](https://www.linkedin.com/feed/update/urn:li:share:7508763411162263552)
 verzonden 2026-09-24T05:45:03.794Z
-bereik 5 · vertoningen 12 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 35 · vertoningen 61 · reacties 2 · comments 0 · gedeeld 0 · engagement 3.3%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-23 (wo)** · x · GEPUBLICEERD
@@ -61,7 +61,7 @@ _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dag
 campagne wetdba-handhaving-2026 · pijler legal-pain
 [live](https://www.linkedin.com/feed/update/urn:li:share:7508038633019412480)
 verzonden 2026-09-22T05:45:03.219Z
-bereik 252 · vertoningen 322 · reacties 1 · comments 0 · gedeeld 0 · engagement 1.9%
+bereik 254 · vertoningen 328 · reacties 1 · comments 0 · gedeeld 0 · engagement 2.1%
 _Week 39, met de hand gedraft op 17 september 2026 volgens execution-plan-14-dagen sectie 7._
 
 **2026-09-18 (vr)** · x · GEPUBLICEERD
@@ -92,7 +92,7 @@ _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel vo
 campagne wetdba-handhaving-2026 · pijler ai-review
 [live](https://www.linkedin.com/feed/update/urn:li:share:7506226696585617411)
 verzonden 2026-09-17T05:45:03.692Z
-bereik 8 · vertoningen 26 · reacties 0 · comments 0 · gedeeld 0 · engagement 3.8%
+bereik 29 · vertoningen 58 · reacties 1 · comments 0 · gedeeld 0 · engagement 3.4%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
 **2026-09-16 (wo)** · x · GEPUBLICEERD
@@ -107,7 +107,7 @@ _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel vo
 campagne wetdba-handhaving-2026 · pijler legal-pain
 [live](https://www.linkedin.com/feed/update/urn:li:share:7505501918782283776)
 verzonden 2026-09-15T05:45:03.221Z
-bereik 11 · vertoningen 25 · reacties 0 · comments 0 · gedeeld 0 · engagement 0.0%
+bereik 51 · vertoningen 82 · reacties 1 · comments 0 · gedeeld 0 · engagement 1.2%
 _Week 38, de eerste volledig gecontroleerde week. Handmatig goedgekeurd regel voor regel._
 
 **2026-09-11 (vr)** · facebook · GEANNULEERD
@@ -124,7 +124,7 @@ _Backfilled. Created before the validation gate existed._
 > Je contract laten nakijken kost je geen duizenden euro's meer.
 [live](https://www.linkedin.com/feed/update/urn:li:share:7503689980549201920)
 verzonden 2026-09-10T05:45:03.479Z
-bereik 79 · vertoningen 117 · reacties 1 · comments 0 · gedeeld 0 · engagement 6.0%
+bereik 79 · vertoningen 118 · reacties 1 · comments 0 · gedeeld 0 · engagement 5.9%
 _Backfilled. Created before the validation gate existed._
 
 **2026-09-09 (wo)** · linkedin · GEPUBLICEERD

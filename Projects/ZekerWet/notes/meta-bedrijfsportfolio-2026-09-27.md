@@ -6,6 +6,13 @@ tags: [meta, instagram, facebook, advertenties]
 project: ZekerWet
 ---
 
+> [!todo] Hervatten (stand 29 september 2026, nacht)
+> Oorzaak bekend: het oude `@zekerwet` (`17841426701771610`) is eigendom van het onbekende portfolio `3085491984976917`, vastgesteld door de eigendomscontrole van Meta's supportassistent, en een reset naar persoonlijk verandert dat niet. Het nieuwe account `@zekerwet.nl` (op `info@zekerwet.nl`, professioneel, niet in het Accountcentrum) staat klaar, maar zit nog niet in portfolio ZekerWet `1586011019756048`. Blokkade: Facebook stuurt geen sms-code meer ("te veel bevestigingscodes", ongeveer tien keer aangevraagd, nummer +31642196743 klopt). In het venster is geen ander kanaal te kiezen.
+> 1. Ali, 's ochtends: eerst de spamfilter voor sms op de telefoon nakijken, dan in gewone Chrome (geen incognito, niet het wmux-paneel) één keer een code aanvragen. Daarna `business.facebook.com/latest/settings/instagram_account?business_id=1586011019756048`, Toevoegen, Add Instagram profile, Van account wisselen, `zekerwet.nl`, Aanmelden als zekerwet.nl.
+> 2. Geen code binnen 10 minuten: stoppen, route via de Facebook-app op de telefoon uitzoeken, zonder sms.
+> 3. Na het toevoegen: pagina ZekerWet koppelen onder Gekoppelde middelen, sitelinks naar `@zekerwet.nl` (`src/config/company.ts:28`, `src/app/contact/page.tsx:186`) via de werker, checklist week 41 en bio-link voor het nieuwe account, verwijzing in de bio van het oude account, authenticatie-app als tweestapsverificatie in plaats van sms.
+> Lessen over wat Claude hier fout deed staan in het geheugen (`meta-koppeling-lessen`): één poging per flow, geen OAuth in het paneel, alleen knoppen noemen die op Ali's screenshot staan.
+
 Stand van het Meta-bedrijfsportfolio van [[ZekerWet]], nagelopen door Claude in het browserpaneel op 27 september 2026 (alleen gekeken, niets gewijzigd). Portfolio-ID `1586011019756048`. [[Ali Can]] heeft drie portfolio's onder zijn persoonlijke Meta-account; alleen "ZekerWet" is bekeken.
 
 | Onderdeel | Stand |
@@ -59,5 +66,9 @@ Antwoord supportassistent na de reset: "Eigendom niet gewijzigd", eigenaar nog s
 Twee opties voorgelegd aan [[Ali Can]]: (A) de dispute voeren, met onzekere uitkomst en een looptijd van weken; (B) opnieuw beginnen: `@zekerwet` hernoemen en een nieuw Instagram-account direct vanuit het ZekerWet-portfolio aanmaken. Voor B kost het huidige account weinig: 10 volgers en 13 posts met gemiddeld 35 vertoningen. Of de naam `zekerwet` na hernoemen meteen vrijkomt, is niet vastgesteld.
 
 Besluit [[Ali Can]] (28 september): optie B. Hij maakt een nieuw account `zekerwet.nl` aan op `info@zekerwet.nl`, na uitloggen bij het oude `@zekerwet`, en voegt het niet toe aan het Accountcentrum. Het oude account blijft bestaan en wordt niet hernoemd. Na het toevoegen aan portfolio `1586011019756048` volgen: sitelinks (`src/config/company.ts:28`, `src/app/contact/page.tsx:186`), de checklist van week 41 en een verwijzing in de bio van het oude account.
+
+Nieuw account `@zekerwet.nl` aangemaakt en professioneel gemaakt (28 op 29 september, via instagram.com op de laptop; geen Facebook-koppeling gevraagd). Toevoegen in Chrome liep vast op de sms-verificatie van Facebook ("te veel bevestigingscodes geprobeerd", nummer klopt). In het wmux-paneel, dat al op Facebook was ingelogd, kwam de flow wel tot "Aanmelden als zekerwet.nl". De terugkeerpagina `business.facebook.com/page/instagram/oidclink/?code=…` bleef daarna wit en het portfolio bleef leeg. Oorzaak: die pagina verwacht een pop-upvenster, en het paneel opent de flow in hetzelfde tabblad (zelfde gedrag als op 27 september). Het paneel kan deze stap dus niet afronden. Afronden in gewone Chrome (geen incognito) zodra de sms-blokkade voorbij is, zonder tussentijds nieuwe codes aan te vragen.
+
+Op verzoek van [[Ali Can]] (29 september, nacht) heeft Claude het wmux-paneel uitgelogd bij Facebook (via Afmelden) en bij Instagram (via `/accounts/logout/`), en de lokale opslag van facebook.com, instagram.com en business.facebook.com geleegd. Het paneel staat nu op `about:blank`. De lijst met onthouden profielen op het inlogscherm (alleen namen, geen sessie) blijft staan, omdat die in httpOnly-cookies zit die het paneel niet kan wissen.
 
 Hoort bij het socialspoor in [[groeiplan-social-2026-09-26]]; fase B (Meta-app) hangt van deze stand af.

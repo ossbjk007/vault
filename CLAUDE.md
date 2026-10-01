@@ -75,6 +75,8 @@ Elke notitie krijgt `type`, `date`, `status` en minimaal twee `tags`. Bij projec
 27. **Verkooptekst zelfverzekerd, bescherming in de voorwaarden.** Klanten komen naar [[ZekerWet]] om geen jurist of advocaat nodig te hebben; dat is het verkoopargument. Dus nooit "klaar voor jurist-review", "laat nakijken door een jurist" of andere zinnen die het platform incompetent laten lijken in site-, product- of marketingtekst. Ook nooit een garantie ("juridisch correct", "juridisch sluitend", "AVG-proof", "waterdicht"). Wel feitelijk en zeker: "opgesteld volgens de Nederlandse wet", wat het document doet, welke wetsartikelen erin zitten. De bescherming staat in de footer (`Footer.tsx:118`), de algemene voorwaarden (art. 11) en de disclaimerpagina, en blijft daar. Ook de regel "geen juridisch advies" in de uitvoer van de AI Review (rapport en PDF) blijft: dat is bescherming bij een analyse van andermans contract, geen verkooptekst (correctie 27 september 2026).
 28. **Opvolgen na een onbeantwoorde mail: kort.** Een belopening of opvolgbericht noemt alleen dat er een mail is gestuurd, het onderwerp in een paar woorden en dat [[Ali Can]] nog graag contact wil. De inhoud van de mail niet opnieuw uitleggen; dat komt pas als de ander doorvraagt (correctie 28 september 2026, belscript [[Yurt Finance]]).
 
+29. **Privézaken blijven buiten de vault.** Iets wat niet over [[ZekerWet]] of het werk gaat, zoals een reis met familie, krijgt geen notitie, geen map onder `Projects/` en geen regel in `Daily/`. Rapporten daarvoor staan alleen als los document buiten de vault (correctie 30 september 2026, reis Italië met vader).
+
 ## Anti-patterns
 
 - Geen `# titel` die de bestandsnaam herhaalt.
